@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE pinplan>
+<pinplan intended_family="APEX20KE" variation_name="altclklock0" megafunction_name="ALTCLKLOCK" specifies="all_ports">
+<global>
+<pin name="inclock" direction="input" scope="external" source="clock"  />
+<pin name="clock1" direction="output" scope="external" source="clock"  />
+
+</global>
+</pinplan>

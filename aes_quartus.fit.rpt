@@ -1,0 +1,1472 @@
+Fitter report for aes_quartus
+Wed Sep 26 15:11:26 2018
+Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Fitter Summary
+  3. Fitter Settings
+  4. Fitter Device Options
+  5. Input Pins
+  6. Output Pins
+  7. All Package Pins
+  8. Non-Global High Fan-Out Signals
+  9. Local Routing Interconnect
+ 10. MegaLAB Interconnect
+ 11. LAB External Interconnect
+ 12. MegaLAB Usage Summary
+ 13. Row Interconnect
+ 14. LAB Column Interconnect
+ 15. ESB Column Interconnect
+ 16. Fitter Resource Usage Summary
+ 17. Fitter Resource Utilization by Entity
+ 18. Delay Chain Summary
+ 19. I/O Bank Usage
+ 20. Pin-Out File
+ 21. Fitter Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------+
+; Fitter Summary                                                  ;
++-----------------------+-----------------------------------------+
+; Fitter Status         ; Successful - Wed Sep 26 15:11:26 2018   ;
+; Quartus II Version    ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
+; Revision Name         ; aes_quartus                             ;
+; Top-level Entity Name ; aes_quartus                             ;
+; Family                ; APEX20KE                                ;
+; Device                ; EP20K200EFI484-2X                       ;
+; Timing Models         ; Final                                   ;
+; Total logic elements  ; 0 / 8,320 ( 0 % )                       ;
+; Total pins            ; 257 / 376 ( 68 % )                      ;
+; Total virtual pins    ; 0                                       ;
+; Total memory bits     ; 0 / 106,496 ( 0 % )                     ;
+; Total PLLs            ; 0 / 2 ( 0 % )                           ;
++-----------------------+-----------------------------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Fitter Settings                                                                                ;
++------------------------------------------------------+--------------------+--------------------+
+; Option                                               ; Setting            ; Default Value      ;
++------------------------------------------------------+--------------------+--------------------+
+; Device                                               ; EP20K200EFI484-2X  ;                    ;
+; Fitter Effort                                        ; Standard Fit       ; Auto Fit           ;
+; Use smart compilation                                ; Off                ; Off                ;
+; Use TimeQuest Timing Analyzer                        ; Off                ; Off                ;
+; Router Timing Optimization Level                     ; Normal             ; Normal             ;
+; Placement Effort Multiplier                          ; 1.0                ; 1.0                ;
+; Router Effort Multiplier                             ; 1.0                ; 1.0                ;
+; Optimize Timing                                      ; Normal compilation ; Normal compilation ;
+; Optimize Timing for ECOs                             ; Off                ; Off                ;
+; Regenerate full fit report during ECO compiles       ; Off                ; Off                ;
+; Optimize IOC Register Placement for Timing           ; On                 ; On                 ;
+; Limit to One Fitting Attempt                         ; Off                ; Off                ;
+; Final Placement Optimizations                        ; Automatically      ; Automatically      ;
+; Fitter Aggressive Routability Optimizations          ; Automatically      ; Automatically      ;
+; Fitter Initial Placement Seed                        ; 1                  ; 1                  ;
+; Slow Slew Rate                                       ; Off                ; Off                ;
+; PCI I/O                                              ; Off                ; Off                ;
+; Turbo Bit                                            ; On                 ; On                 ;
+; Auto Global Memory Control Signals                   ; Off                ; Off                ;
+; Auto Global Clock                                    ; On                 ; On                 ;
+; Auto Global Output Enable                            ; On                 ; On                 ;
+; Auto Global Register Control Signals                 ; On                 ; On                 ;
+; SignalProbe signals routed during normal compilation ; Off                ; Off                ;
++------------------------------------------------------+--------------------+--------------------+
+
+
++-------------------------------------------------------------------------+
+; Fitter Device Options                                                   ;
++----------------------------------------------+--------------------------+
+; Option                                       ; Setting                  ;
++----------------------------------------------+--------------------------+
+; Enable user-supplied start-up clock (CLKUSR) ; Off                      ;
+; Enable device-wide reset (DEV_CLRn)          ; Off                      ;
+; Enable device-wide output enable (DEV_OE)    ; Off                      ;
+; Enable INIT_DONE output                      ; Off                      ;
+; Configuration scheme                         ; Passive Serial           ;
+; nWS, nRS, nCS, CS                            ; Unreserved               ;
+; RDYnBUSY                                     ; Unreserved               ;
+; Data[7..1]                                   ; Unreserved               ;
+; Reserve all unused pins                      ; As output driving ground ;
+; Base pin-out file on sameframe device        ; Off                      ;
++----------------------------------------------+--------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Input Pins                                                                                                                                                                                                      ;
++-----------------+-------+-------------+--------------+------+---------+--------+--------------+-------------------------+---------------+-----------------+---------------+----------------------+--------------+
+; Name            ; Pin # ; MegaLAB Row ; MegaLAB Col. ; Col. ; Fan-Out ; Global ; I/O Register ; Use Local Routing Input ; Power Up High ; PCI I/O Enabled ; Single-Pin CE ; FastRow Interconnect ; I/O Standard ;
++-----------------+-------+-------------+--------------+------+---------+--------+--------------+-------------------------+---------------+-----------------+---------------+----------------------+--------------+
+; data0_input[7]  ; U22   ;  R          ; --           ; --   ; 1       ; no     ; no           ; yes                     ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data0_input[6]  ; P19   ;  P          ; --           ; --   ; 1       ; no     ; no           ; yes                     ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data0_input[5]  ; A18   ;  C          ; --           ; --   ; 1       ; no     ; no           ; yes                     ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data0_input[4]  ; R17   ;  U          ; --           ; --   ; 1       ; no     ; no           ; yes                     ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data0_input[3]  ; P3    ;  R          ; --           ; --   ; 1       ; no     ; no           ; yes                     ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data0_input[2]  ; B9    ;  A          ; --           ; --   ; 1       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data0_input[1]  ; W3    ;  U          ; --           ; --   ; 1       ; no     ; no           ; yes                     ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data0_input[0]  ; K7    ;  J          ; --           ; --   ; 1       ; no     ; no           ; yes                     ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data1_input[7]  ; K5    ;  O          ; --           ; --   ; 1       ; no     ; no           ; yes                     ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data1_input[6]  ; H20   ;  H          ; --           ; --   ; 1       ; no     ; no           ; yes                     ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data1_input[5]  ; U19   ;  T          ; --           ; --   ; 1       ; no     ; no           ; yes                     ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data1_input[4]  ; A17   ;  B          ; --           ; --   ; 1       ; no     ; no           ; yes                     ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data1_input[3]  ; V2    ;  W          ; --           ; --   ; 1       ; no     ; no           ; yes                     ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data1_input[2]  ; F2    ;  G          ; --           ; --   ; 1       ; no     ; no           ; yes                     ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data1_input[1]  ; U21   ;  S          ; --           ; --   ; 1       ; no     ; no           ; yes                     ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data1_input[0]  ; H18   ;  I          ; --           ; --   ; 1       ; no     ; no           ; yes                     ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data2_input[7]  ; D20   ;  F          ; --           ; --   ; 1       ; no     ; no           ; yes                     ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data2_input[6]  ; J7    ;  O          ; --           ; --   ; 1       ; no     ; no           ; yes                     ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data2_input[5]  ; B14   ;  A          ; --           ; --   ; 1       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data2_input[4]  ; Y21   ;  V          ; --           ; --   ; 1       ; no     ; no           ; yes                     ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data2_input[3]  ; B13   ;  A          ; --           ; --   ; 1       ; no     ; no           ; yes                     ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data2_input[2]  ; E2    ;  F          ; --           ; --   ; 1       ; no     ; no           ; yes                     ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data2_input[1]  ; K15   ;  M          ; --           ; --   ; 1       ; no     ; no           ; yes                     ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data2_input[0]  ; M2    ;  Q          ; --           ; --   ; 1       ; no     ; no           ; yes                     ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data3_input[7]  ; B8    ;  B          ; --           ; --   ; 1       ; no     ; no           ; yes                     ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data3_input[6]  ; AB15  ;  Z          ; --           ; --   ; 1       ; no     ; no           ; yes                     ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data3_input[5]  ; AB6   ;  Y          ; --           ; --   ; 1       ; no     ; no           ; yes                     ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data3_input[4]  ; B11   ;  A          ; --           ; --   ; 1       ; no     ; no           ; yes                     ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data3_input[3]  ; B10   ;  A          ; --           ; --   ; 1       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data3_input[2]  ; AA13  ;  Z          ; --           ; --   ; 1       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data3_input[1]  ; J19   ;  K          ; --           ; --   ; 1       ; no     ; no           ; yes                     ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data3_input[0]  ; AB8   ;  Z          ; --           ; --   ; 1       ; no     ; no           ; yes                     ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data10_input[7] ; P20   ;  M          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data10_input[6] ; E14   ; --          ; 2            ; 11   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data10_input[5] ; G4    ;  J          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data10_input[4] ; H16   ; --          ; 2            ; 5    ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data10_input[3] ; AB18  ;  Y          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data10_input[2] ; N5    ;  M          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data10_input[1] ; AA18  ;  X          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data10_input[0] ; D13   ; --          ; 2            ; 12   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data11_input[7] ; T20   ;  Q          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data11_input[6] ; W21   ;  V          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data11_input[5] ; E15   ; --          ; 2            ; 8    ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data11_input[4] ; C18   ; --          ; 2            ; 2    ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data11_input[3] ; F19   ;  F          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data11_input[2] ; AB3   ;  X          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data11_input[1] ; C5    ; --          ; 1            ; 5    ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data11_input[0] ; U18   ; --          ; 2            ; 3    ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data12_input[7] ; V22   ;  W          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data12_input[6] ; R11   ; --          ; 1            ; 14   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data12_input[5] ; J16   ;  I          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data12_input[4] ; C17   ; --          ; 2            ; 4    ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data12_input[3] ; E18   ;  F          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data12_input[2] ; T17   ;  U          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data12_input[1] ; T3    ;  T          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data12_input[0] ; V7    ; --          ; 1            ; 5    ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data13_input[7] ; K22   ;  L          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data13_input[6] ; Y16   ; --          ; 2            ; 7    ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data13_input[5] ; W22   ;  V          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data13_input[4] ; E1    ;  E          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data13_input[3] ; E7    ; --          ; 1            ; 3    ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data13_input[2] ; U16   ; --          ; 2            ; 5    ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data13_input[1] ; Y10   ; --          ; 1            ; 14   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data13_input[0] ; AB2   ;  W          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data14_input[7] ; AA20  ;  W          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data14_input[6] ; C10   ; --          ; 1            ; 13   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data14_input[5] ; A5    ;  C          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data14_input[4] ; B19   ;  C          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data14_input[3] ; R12   ; --          ; 2            ; 14   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data14_input[2] ; E16   ; --          ; 2            ; 6    ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data14_input[1] ; G6    ;  H          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data14_input[0] ; V8    ; --          ; 1            ; 7    ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data15_input[7] ; L14   ;  Q          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data15_input[6] ; G12   ; --          ; 1            ; 15   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data15_input[5] ; U1    ;  T          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data15_input[4] ; E8    ; --          ; 1            ; 4    ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data15_input[3] ; R1    ;  S          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data15_input[2] ; E22   ;  G          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data15_input[1] ; W1    ;  W          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data15_input[0] ; C1    ;  D          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data4_input[7]  ; Y14   ; --          ; 2            ; 12   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data4_input[6]  ; M15   ;  R          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data4_input[5]  ; B15   ;  B          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data4_input[4]  ; F22   ;  H          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data4_input[3]  ; N1    ;  Q          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data4_input[2]  ; AA3   ;  V          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data4_input[1]  ; V6    ; --          ; 1            ; 5    ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data4_input[0]  ; V20   ;  V          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data5_input[7]  ; M6    ;  P          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data5_input[6]  ; T2    ;  T          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data5_input[5]  ; L21   ;  J          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data5_input[4]  ; F20   ;  G          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data5_input[3]  ; V15   ; --          ; 2            ; 7    ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data5_input[2]  ; R5    ;  N          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data5_input[1]  ; G20   ;  G          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data5_input[0]  ; U2    ;  T          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data6_input[7]  ; V5    ; --          ; 1            ; 2    ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data6_input[6]  ; U10   ; --          ; 1            ; 12   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data6_input[5]  ; AA16  ;  Y          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data6_input[4]  ; F7    ;  H          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data6_input[3]  ; T12   ; --          ; 2            ; 15   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data6_input[2]  ; AA9   ;  Z          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data6_input[1]  ; C20   ;  E          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data6_input[0]  ; C11   ; --          ; 2            ; 14   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data7_input[7]  ; V1    ;  W          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data7_input[6]  ; F14   ; --          ; 2            ; 11   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data7_input[5]  ; N22   ;  L          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data7_input[4]  ; H6    ;  K          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data7_input[3]  ; A3    ;  C          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data7_input[2]  ; H3    ;  I          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data7_input[1]  ; V18   ; --          ; 2            ; 3    ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data7_input[0]  ; A7    ;  B          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data8_input[7]  ; N19   ;  P          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data8_input[6]  ; P12   ; --          ; 2            ; 11   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data8_input[5]  ; F11   ; --          ; 1            ; 16   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data8_input[4]  ; K8    ;  F          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data8_input[3]  ; K21   ;  K          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data8_input[2]  ; A21   ;  D          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data8_input[1]  ; C6    ; --          ; 1            ; 6    ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data8_input[0]  ; T21   ;  Q          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data9_input[7]  ; Y8    ; --          ; 1            ; 9    ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data9_input[6]  ; L3    ;  K          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data9_input[5]  ; R13   ; --          ; 2            ; 9    ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data9_input[4]  ; E5    ;  G          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data9_input[3]  ; W9    ; --          ; 1            ; 10   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data9_input[2]  ; AA15  ;  Y          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data9_input[1]  ; F5    ;  G          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; data9_input[0]  ; A15   ;  A          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
+; clock           ; T22   ;  Q          ; --           ; --   ; 0       ; no     ; no           ; no                      ; no            ; no              ; no            ; no                   ; 3.3-V LVTTL  ;
++-----------------+-------+-------------+--------------+------+---------+--------+--------------+-------------------------+---------------+-----------------+---------------+----------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Output Pins                                                                                                                                                                                                                           ;
++------------------+-------+-------------+--------------+------+--------------+--------------------------+---------------+----------------+-----------------+---------------+---------------+------------+---------------+--------------+
+; Name             ; Pin # ; MegaLAB Row ; MegaLAB Col. ; Col. ; I/O Register ; Use Local Routing Output ; Power Up High ; Slow Slew Rate ; PCI I/O Enabled ; Single-Pin OE ; Single-Pin CE ; Open Drain ; TRI Primitive ; I/O Standard ;
++------------------+-------+-------------+--------------+------+--------------+--------------------------+---------------+----------------+-----------------+---------------+---------------+------------+---------------+--------------+
+; data0_output[7]  ; N16   ;  R          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data0_output[6]  ; R20   ;  P          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data0_output[5]  ; A19   ;  C          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data0_output[4]  ; Y19   ;  U          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data0_output[3]  ; R3    ;  R          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data0_output[2]  ; C4    ; --          ; 1            ; 2    ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data0_output[1]  ; W4    ;  U          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data0_output[0]  ; G5    ;  J          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data1_output[7]  ; J3    ;  O          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data1_output[6]  ; H22   ;  H          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data1_output[5]  ; T19   ;  T          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data1_output[4]  ; A16   ;  B          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data1_output[3]  ; Y1    ;  W          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data1_output[2]  ; M7    ;  G          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data1_output[1]  ; R18   ;  S          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data1_output[0]  ; H19   ;  I          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data2_output[7]  ; E19   ;  F          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data2_output[6]  ; J5    ;  O          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data2_output[5]  ; C19   ; --          ; 2            ; 1    ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data2_output[4]  ; W19   ;  V          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data2_output[3]  ; B12   ;  A          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data2_output[2]  ; E6    ;  F          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data2_output[1]  ; P21   ;  M          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data2_output[0]  ; U5    ;  Q          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data3_output[7]  ; B7    ;  B          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data3_output[6]  ; AA12  ;  Z          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data3_output[5]  ; AA6   ;  Y          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data3_output[4]  ; A8    ;  A          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data3_output[3]  ; D4    ; --          ; 1            ; 1    ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data3_output[2]  ; W18   ; --          ; 2            ; 1    ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data3_output[1]  ; K20   ;  K          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data3_output[0]  ; AA11  ;  Z          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data10_output[7] ; J2    ;  P          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data10_output[6] ; K1    ;  Q          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data10_output[5] ; AB7   ;  Y          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data10_output[4] ; L15   ;  P          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data10_output[3] ; Y2    ;  V          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data10_output[2] ; J21   ;  J          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data10_output[1] ; P6    ;  M          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data10_output[0] ; W14   ; --          ; 2            ; 11   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data11_output[7] ; AA19  ;  W          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data11_output[6] ; W2    ;  V          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data11_output[5] ; AA17  ;  X          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data11_output[4] ; L17   ;  O          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data11_output[3] ; P4    ;  L          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data11_output[2] ; G22   ;  I          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data11_output[1] ; AA7   ;  Y          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data11_output[0] ; J1    ;  P          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data12_output[7] ; U11   ; --          ; 1            ; 15   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data12_output[6] ; N7    ;  L          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data12_output[5] ; AB4   ;  X          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data12_output[4] ; E13   ; --          ; 2            ; 15   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data12_output[3] ; T13   ; --          ; 2            ; 13   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data12_output[2] ; H2    ;  K          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data12_output[1] ; U14   ; --          ; 2            ; 10   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data12_output[0] ; E9    ; --          ; 1            ; 9    ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data13_output[7] ; F15   ; --          ; 2            ; 9    ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data13_output[6] ; U9    ; --          ; 1            ; 11   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data13_output[5] ; U4    ;  T          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data13_output[4] ; F9    ; --          ; 1            ; 7    ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data13_output[3] ; J22   ;  J          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data13_output[2] ; W8    ; --          ; 1            ; 8    ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data13_output[1] ; W16   ; --          ; 2            ; 6    ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data13_output[0] ; C22   ;  D          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data14_output[7] ; U7    ; --          ; 1            ; 6    ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data14_output[6] ; L20   ;  N          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data14_output[5] ; K19   ;  L          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data14_output[4] ; J12   ; --          ; 2            ; 14   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data14_output[3] ; T18   ;  T          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data14_output[2] ; Y20   ;  U          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data14_output[1] ; E17   ; --          ; 2            ; 3    ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data14_output[0] ; A4    ;  C          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data15_output[7] ; A20   ;  C          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data15_output[6] ; V14   ; --          ; 2            ; 10   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data15_output[5] ; J17   ;  J          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data15_output[4] ; F1    ;  I          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data15_output[3] ; G10   ; --          ; 1            ; 9    ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data15_output[2] ; E4    ;  F          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data15_output[1] ; E10   ; --          ; 1            ; 10   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data15_output[0] ; N18   ;  O          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data4_output[7]  ; B17   ;  B          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data4_output[6]  ; R4    ;  O          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data4_output[5]  ; D21   ;  D          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data4_output[4]  ; F10   ; --          ; 1            ; 11   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data4_output[3]  ; Y13   ; --          ; 2            ; 13   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data4_output[2]  ; AB20  ;  X          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data4_output[1]  ; G15   ; --          ; 2            ; 10   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data4_output[0]  ; AA4   ;  X          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data5_output[7]  ; F3    ;  G          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data5_output[6]  ; C16   ; --          ; 2            ; 6    ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data5_output[5]  ; H21   ;  I          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data5_output[4]  ; C3    ;  D          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data5_output[3]  ; M3    ;  Q          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data5_output[2]  ; V13   ; --          ; 2            ; 14   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data5_output[1]  ; Y22   ;  W          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data5_output[0]  ; V21   ;  W          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data6_output[7]  ; B4    ;  C          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data6_output[6]  ; C12   ; --          ; 2            ; 13   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data6_output[5]  ; F4    ;  H          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data6_output[4]  ; W6    ; --          ; 1            ; 4    ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data6_output[3]  ; D9    ; --          ; 1            ; 10   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data6_output[2]  ; N6    ;  N          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data6_output[1]  ; J20   ;  K          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data6_output[0]  ; Y3    ;  U          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data7_output[7]  ; R2    ;  S          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data7_output[6]  ; H10   ; --          ; 1            ; 7    ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data7_output[5]  ; AA8   ;  Y          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data7_output[4]  ; G14   ; --          ; 2            ; 16   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data7_output[3]  ; B18   ;  C          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data7_output[2]  ; T11   ; --          ; 1            ; 16   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data7_output[1]  ; G18   ;  H          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data7_output[0]  ; R22   ;  L          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data8_output[7]  ; G19   ;  F          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data8_output[6]  ; D14   ; --          ; 2            ; 9    ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data8_output[5]  ; W7    ; --          ; 1            ; 4    ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data8_output[4]  ; N2    ;  P          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data8_output[3]  ; P18   ;  R          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data8_output[2]  ; K18   ;  N          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data8_output[1]  ; F21   ;  D          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data8_output[0]  ; D17   ; --          ; 2            ; 4    ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data9_output[7]  ; G3    ;  H          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data9_output[6]  ; AA5   ;  X          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data9_output[5]  ; D7    ; --          ; 1            ; 8    ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data9_output[4]  ; W15   ; --          ; 2            ; 8    ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data9_output[3]  ; N15   ;  S          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data9_output[2]  ; P2    ;  S          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data9_output[1]  ; H17   ;  H          ; --           ; --   ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
+; data9_output[0]  ; D15   ; --          ; 2            ; 8    ; no           ; no                       ; no            ; no             ; no              ; no            ; no            ; no         ; no            ; 3.3-V LVTTL  ;
++------------------+-------+-------------+--------------+------+--------------+--------------------------+---------------+----------------+-----------------+---------------+---------------+------------+---------------+--------------+
+
+
++-----------------------------------------+
+; All Package Pins                        ;
++-------+------------------+--------------+
+; Pin # ; Usage            ; I/O Standard ;
++-------+------------------+--------------+
+; A1    ; GND              ;              ;
+; A2    ; GND*             ;              ;
+; A3    ; data7_input[3]   ; 3.3-V LVTTL  ;
+; A4    ; data14_output[0] ; 3.3-V LVTTL  ;
+; A5    ; data14_input[5]  ; 3.3-V LVTTL  ;
+; A6    ; GND*             ;              ;
+; A7    ; data7_input[0]   ; 3.3-V LVTTL  ;
+; A8    ; data3_output[4]  ; 3.3-V LVTTL  ;
+; A9    ; NC               ;              ;
+; A10   ; NC               ;              ;
+; A11   ; GND              ;              ;
+; A12   ; NC               ;              ;
+; A13   ; NC               ;              ;
+; A14   ; NC               ;              ;
+; A15   ; data9_input[0]   ; 3.3-V LVTTL  ;
+; A16   ; data1_output[4]  ; 3.3-V LVTTL  ;
+; A17   ; data1_input[4]   ; 3.3-V LVTTL  ;
+; A18   ; data0_input[5]   ; 3.3-V LVTTL  ;
+; A19   ; data0_output[5]  ; 3.3-V LVTTL  ;
+; A20   ; data15_output[7] ; 3.3-V LVTTL  ;
+; A21   ; data8_input[2]   ; 3.3-V LVTTL  ;
+; A22   ; GND              ;              ;
+; B1    ; VCC_INT          ;              ;
+; B2    ; GND              ;              ;
+; B3    ; GND*             ;              ;
+; B4    ; data6_output[7]  ; 3.3-V LVTTL  ;
+; B5    ; GND*             ;              ;
+; B6    ; GND*             ;              ;
+; B7    ; data3_output[7]  ; 3.3-V LVTTL  ;
+; B8    ; data3_input[7]   ; 3.3-V LVTTL  ;
+; B9    ; data0_input[2]   ; 3.3-V LVTTL  ;
+; B10   ; data3_input[3]   ; 3.3-V LVTTL  ;
+; B11   ; data3_input[4]   ; 3.3-V LVTTL  ;
+; B12   ; data2_output[3]  ; 3.3-V LVTTL  ;
+; B13   ; data2_input[3]   ; 3.3-V LVTTL  ;
+; B14   ; data2_input[5]   ; 3.3-V LVTTL  ;
+; B15   ; data4_input[5]   ; 3.3-V LVTTL  ;
+; B16   ; GND*             ;              ;
+; B17   ; data4_output[7]  ; 3.3-V LVTTL  ;
+; B18   ; data7_output[3]  ; 3.3-V LVTTL  ;
+; B19   ; data14_input[4]  ; 3.3-V LVTTL  ;
+; B20   ; GND*             ;              ;
+; B21   ; GND              ;              ;
+; B22   ; VCC_INT          ;              ;
+; C1    ; data15_input[0]  ; 3.3-V LVTTL  ;
+; C2    ; GND*             ;              ;
+; C3    ; data5_output[4]  ; 3.3-V LVTTL  ;
+; C4    ; data0_output[2]  ; 3.3-V LVTTL  ;
+; C5    ; data11_input[1]  ; 3.3-V LVTTL  ;
+; C6    ; data8_input[1]   ; 3.3-V LVTTL  ;
+; C7    ; GND*             ;              ;
+; C8    ; GND*             ;              ;
+; C9    ; GND*             ;              ;
+; C10   ; data14_input[6]  ; 3.3-V LVTTL  ;
+; C11   ; data6_input[0]   ; 3.3-V LVTTL  ;
+; C12   ; data6_output[6]  ; 3.3-V LVTTL  ;
+; C13   ; GND*             ;              ;
+; C14   ; GND*             ;              ;
+; C15   ; GND*             ;              ;
+; C16   ; data5_output[6]  ; 3.3-V LVTTL  ;
+; C17   ; data12_input[4]  ; 3.3-V LVTTL  ;
+; C18   ; data11_input[4]  ; 3.3-V LVTTL  ;
+; C19   ; data2_output[5]  ; 3.3-V LVTTL  ;
+; C20   ; data6_input[1]   ; 3.3-V LVTTL  ;
+; C21   ; GND*             ;              ;
+; C22   ; data13_output[0] ; 3.3-V LVTTL  ;
+; D1    ; GND*             ;              ;
+; D2    ; GND*             ;              ;
+; D3    ; GND*             ;              ;
+; D4    ; data3_output[3]  ; 3.3-V LVTTL  ;
+; D5    ; GND*             ;              ;
+; D6    ; GND*             ;              ;
+; D7    ; data9_output[5]  ; 3.3-V LVTTL  ;
+; D8    ; GND*             ;              ;
+; D9    ; data6_output[3]  ; 3.3-V LVTTL  ;
+; D10   ; GND*             ;              ;
+; D11   ; GND+             ;              ;
+; D12   ; #TRST            ;              ;
+; D13   ; data10_input[0]  ; 3.3-V LVTTL  ;
+; D14   ; data8_output[6]  ; 3.3-V LVTTL  ;
+; D15   ; data9_output[0]  ; 3.3-V LVTTL  ;
+; D16   ; GND*             ;              ;
+; D17   ; data8_output[0]  ; 3.3-V LVTTL  ;
+; D18   ; GND*             ;              ;
+; D19   ; GND*             ;              ;
+; D20   ; data2_input[7]   ; 3.3-V LVTTL  ;
+; D21   ; data4_output[5]  ; 3.3-V LVTTL  ;
+; D22   ; GND*             ;              ;
+; E1    ; data13_input[4]  ; 3.3-V LVTTL  ;
+; E2    ; data2_input[2]   ; 3.3-V LVTTL  ;
+; E3    ; GND*             ;              ;
+; E4    ; data15_output[2] ; 3.3-V LVTTL  ;
+; E5    ; data9_input[4]   ; 3.3-V LVTTL  ;
+; E6    ; data2_output[2]  ; 3.3-V LVTTL  ;
+; E7    ; data13_input[3]  ; 3.3-V LVTTL  ;
+; E8    ; data15_input[4]  ; 3.3-V LVTTL  ;
+; E9    ; data12_output[0] ; 3.3-V LVTTL  ;
+; E10   ; data15_output[1] ; 3.3-V LVTTL  ;
+; E11   ; #TDO             ;              ;
+; E12   ; ^nCEO            ;              ;
+; E13   ; data12_output[4] ; 3.3-V LVTTL  ;
+; E14   ; data10_input[6]  ; 3.3-V LVTTL  ;
+; E15   ; data11_input[5]  ; 3.3-V LVTTL  ;
+; E16   ; data14_input[2]  ; 3.3-V LVTTL  ;
+; E17   ; data14_output[1] ; 3.3-V LVTTL  ;
+; E18   ; data12_input[3]  ; 3.3-V LVTTL  ;
+; E19   ; data2_output[7]  ; 3.3-V LVTTL  ;
+; E20   ; GND*             ;              ;
+; E21   ; GND*             ;              ;
+; E22   ; data15_input[2]  ; 3.3-V LVTTL  ;
+; F1    ; data15_output[4] ; 3.3-V LVTTL  ;
+; F2    ; data1_input[2]   ; 3.3-V LVTTL  ;
+; F3    ; data5_output[7]  ; 3.3-V LVTTL  ;
+; F4    ; data6_output[5]  ; 3.3-V LVTTL  ;
+; F5    ; data9_input[1]   ; 3.3-V LVTTL  ;
+; F6    ; GND              ;              ;
+; F7    ; data6_input[4]   ; 3.3-V LVTTL  ;
+; F8    ; GND*             ;              ;
+; F9    ; data13_output[4] ; 3.3-V LVTTL  ;
+; F10   ; data4_output[4]  ; 3.3-V LVTTL  ;
+; F11   ; data8_input[5]   ; 3.3-V LVTTL  ;
+; F12   ; GND+             ;              ;
+; F13   ; GND*             ;              ;
+; F14   ; data7_input[6]   ; 3.3-V LVTTL  ;
+; F15   ; data13_output[7] ; 3.3-V LVTTL  ;
+; F16   ; GND*             ;              ;
+; F17   ; GND              ;              ;
+; F18   ; GND*             ;              ;
+; F19   ; data11_input[3]  ; 3.3-V LVTTL  ;
+; F20   ; data5_input[4]   ; 3.3-V LVTTL  ;
+; F21   ; data8_output[1]  ; 3.3-V LVTTL  ;
+; F22   ; data4_input[4]   ; 3.3-V LVTTL  ;
+; G1    ; GND*             ;              ;
+; G2    ; GND*             ;              ;
+; G3    ; data9_output[7]  ; 3.3-V LVTTL  ;
+; G4    ; data10_input[5]  ; 3.3-V LVTTL  ;
+; G5    ; data0_output[0]  ; 3.3-V LVTTL  ;
+; G6    ; data14_input[1]  ; 3.3-V LVTTL  ;
+; G7    ; GND              ;              ;
+; G8    ; VCC_IO           ;              ;
+; G9    ; GND*             ;              ;
+; G10   ; data15_output[3] ; 3.3-V LVTTL  ;
+; G11   ; GND*             ;              ;
+; G12   ; data15_input[6]  ; 3.3-V LVTTL  ;
+; G13   ; GND*             ;              ;
+; G14   ; data7_output[4]  ; 3.3-V LVTTL  ;
+; G15   ; data4_output[1]  ; 3.3-V LVTTL  ;
+; G16   ; GND              ;              ;
+; G17   ; GND*             ;              ;
+; G18   ; data7_output[1]  ; 3.3-V LVTTL  ;
+; G19   ; data8_output[7]  ; 3.3-V LVTTL  ;
+; G20   ; data5_input[1]   ; 3.3-V LVTTL  ;
+; G21   ; GND*             ;              ;
+; G22   ; data11_output[2] ; 3.3-V LVTTL  ;
+; H1    ; GND*             ;              ;
+; H2    ; data12_output[2] ; 3.3-V LVTTL  ;
+; H3    ; data7_input[2]   ; 3.3-V LVTTL  ;
+; H4    ; GND*             ;              ;
+; H5    ; GND*             ;              ;
+; H6    ; data7_input[4]   ; 3.3-V LVTTL  ;
+; H7    ; VCC_IO           ;              ;
+; H8    ; GND              ;              ;
+; H9    ; VCC_INT          ;              ;
+; H10   ; data7_output[6]  ; 3.3-V LVTTL  ;
+; H11   ; GND*             ;              ;
+; H12   ; GND*             ;              ;
+; H13   ; GND*             ;              ;
+; H14   ; VCC_IO           ;              ;
+; H15   ; GND              ;              ;
+; H16   ; data10_input[4]  ; 3.3-V LVTTL  ;
+; H17   ; data9_output[1]  ; 3.3-V LVTTL  ;
+; H18   ; data1_input[0]   ; 3.3-V LVTTL  ;
+; H19   ; data1_output[0]  ; 3.3-V LVTTL  ;
+; H20   ; data1_input[6]   ; 3.3-V LVTTL  ;
+; H21   ; data5_output[5]  ; 3.3-V LVTTL  ;
+; H22   ; data1_output[6]  ; 3.3-V LVTTL  ;
+; J1    ; data11_output[0] ; 3.3-V LVTTL  ;
+; J2    ; data10_output[7] ; 3.3-V LVTTL  ;
+; J3    ; data1_output[7]  ; 3.3-V LVTTL  ;
+; J4    ; GND*             ;              ;
+; J5    ; data2_output[6]  ; 3.3-V LVTTL  ;
+; J6    ; GND*             ;              ;
+; J7    ; data2_input[6]   ; 3.3-V LVTTL  ;
+; J8    ; VCC_INT          ;              ;
+; J9    ; GND              ;              ;
+; J10   ; VCC_IO           ;              ;
+; J11   ; GND              ;              ;
+; J12   ; data14_output[4] ; 3.3-V LVTTL  ;
+; J13   ; VCC_INT          ;              ;
+; J14   ; GND              ;              ;
+; J15   ; VCC_IO           ;              ;
+; J16   ; data12_input[5]  ; 3.3-V LVTTL  ;
+; J17   ; data15_output[5] ; 3.3-V LVTTL  ;
+; J18   ; GND*             ;              ;
+; J19   ; data3_input[1]   ; 3.3-V LVTTL  ;
+; J20   ; data6_output[1]  ; 3.3-V LVTTL  ;
+; J21   ; data10_output[2] ; 3.3-V LVTTL  ;
+; J22   ; data13_output[3] ; 3.3-V LVTTL  ;
+; K1    ; data10_output[6] ; 3.3-V LVTTL  ;
+; K2    ; GND*             ;              ;
+; K3    ; GND*             ;              ;
+; K4    ; GND*             ;              ;
+; K5    ; data1_input[7]   ; 3.3-V LVTTL  ;
+; K6    ; GND*             ;              ;
+; K7    ; data0_input[0]   ; 3.3-V LVTTL  ;
+; K8    ; data8_input[4]   ; 3.3-V LVTTL  ;
+; K9    ; VCC_IO           ;              ;
+; K10   ; GND              ;              ;
+; K11   ; VCC_INT          ;              ;
+; K12   ; VCC_IO           ;              ;
+; K13   ; GND              ;              ;
+; K14   ; VCC_INT          ;              ;
+; K15   ; data2_input[1]   ; 3.3-V LVTTL  ;
+; K16   ; GND*             ;              ;
+; K17   ; GND+             ;              ;
+; K18   ; data8_output[2]  ; 3.3-V LVTTL  ;
+; K19   ; data14_output[5] ; 3.3-V LVTTL  ;
+; K20   ; data3_output[1]  ; 3.3-V LVTTL  ;
+; K21   ; data8_input[3]   ; 3.3-V LVTTL  ;
+; K22   ; data13_input[7]  ; 3.3-V LVTTL  ;
+; L1    ; VCC_IO           ;              ;
+; L2    ; GND              ;              ;
+; L3    ; data9_input[6]   ; 3.3-V LVTTL  ;
+; L4    ; ^DATA0           ;              ;
+; L5    ; ^DCLK            ;              ;
+; L6    ; GND+             ;              ;
+; L7    ; GND*             ;              ;
+; L8    ; GND*             ;              ;
+; L9    ; VCC_CKLK2        ;              ;
+; L10   ; VCC_INT          ;              ;
+; L11   ; GND              ;              ;
+; L12   ; GND              ;              ;
+; L13   ; VCC_IO           ;              ;
+; L14   ; data15_input[7]  ; 3.3-V LVTTL  ;
+; L15   ; data10_output[4] ; 3.3-V LVTTL  ;
+; L16   ; GND*             ;              ;
+; L17   ; data11_output[4] ; 3.3-V LVTTL  ;
+; L18   ; ^MSEL1           ;              ;
+; L19   ; ^MSEL0           ;              ;
+; L20   ; data14_output[6] ; 3.3-V LVTTL  ;
+; L21   ; data5_input[5]   ; 3.3-V LVTTL  ;
+; L22   ; VCC_IO           ;              ;
+; M1    ; GND              ;              ;
+; M2    ; data2_input[0]   ; 3.3-V LVTTL  ;
+; M3    ; data5_output[3]  ; 3.3-V LVTTL  ;
+; M4    ; ^nCE             ;              ;
+; M5    ; #TDI             ;              ;
+; M6    ; data5_input[7]   ; 3.3-V LVTTL  ;
+; M7    ; data1_output[2]  ; 3.3-V LVTTL  ;
+; M8    ; VCC_CKLK4        ;              ;
+; M9    ; GND_CKLK2        ;              ;
+; M10   ; VCC_IO           ;              ;
+; M11   ; GND              ;              ;
+; M12   ; GND              ;              ;
+; M13   ; VCC_INT          ;              ;
+; M14   ; VCC_INT          ;              ;
+; M15   ; data4_input[6]   ; 3.3-V LVTTL  ;
+; M16   ; GND*             ;              ;
+; M17   ; GND*             ;              ;
+; M18   ; GND+             ;              ;
+; M19   ; ^NCONFIG         ;              ;
+; M20   ; GND*             ;              ;
+; M21   ; GND              ;              ;
+; M22   ; VCC_INT          ;              ;
+; N1    ; data4_input[3]   ; 3.3-V LVTTL  ;
+; N2    ; data8_output[4]  ; 3.3-V LVTTL  ;
+; N3    ; GND*             ;              ;
+; N4    ; GND+             ;              ;
+; N5    ; data10_input[2]  ; 3.3-V LVTTL  ;
+; N6    ; data6_output[2]  ; 3.3-V LVTTL  ;
+; N7    ; data12_output[6] ; 3.3-V LVTTL  ;
+; N8    ; GND_CKLK4        ;              ;
+; N9    ; VCC_INT          ;              ;
+; N10   ; GND              ;              ;
+; N11   ; VCC_IO           ;              ;
+; N12   ; VCC_INT          ;              ;
+; N13   ; GND              ;              ;
+; N14   ; VCC_IO           ;              ;
+; N15   ; data9_output[3]  ; 3.3-V LVTTL  ;
+; N16   ; data0_output[7]  ; 3.3-V LVTTL  ;
+; N17   ; GND*             ;              ;
+; N18   ; data15_output[0] ; 3.3-V LVTTL  ;
+; N19   ; data8_input[7]   ; 3.3-V LVTTL  ;
+; N20   ; GND*             ;              ;
+; N21   ; GND*             ;              ;
+; N22   ; data7_input[5]   ; 3.3-V LVTTL  ;
+; P1    ; GND*             ;              ;
+; P2    ; data9_output[2]  ; 3.3-V LVTTL  ;
+; P3    ; data0_input[3]   ; 3.3-V LVTTL  ;
+; P4    ; data11_output[3] ; 3.3-V LVTTL  ;
+; P5    ; GND*             ;              ;
+; P6    ; data10_output[1] ; 3.3-V LVTTL  ;
+; P7    ; GND*             ;              ;
+; P8    ; VCC_IO           ;              ;
+; P9    ; GND              ;              ;
+; P10   ; VCC_INT          ;              ;
+; P11   ; GND*             ;              ;
+; P12   ; data8_input[6]   ; 3.3-V LVTTL  ;
+; P13   ; VCC_IO           ;              ;
+; P14   ; GND              ;              ;
+; P15   ; VCC_INT          ;              ;
+; P16   ; GND*             ;              ;
+; P17   ; GND*             ;              ;
+; P18   ; data8_output[3]  ; 3.3-V LVTTL  ;
+; P19   ; data0_input[6]   ; 3.3-V LVTTL  ;
+; P20   ; data10_input[7]  ; 3.3-V LVTTL  ;
+; P21   ; data2_output[1]  ; 3.3-V LVTTL  ;
+; P22   ; GND*             ;              ;
+; R1    ; data15_input[3]  ; 3.3-V LVTTL  ;
+; R2    ; data7_output[7]  ; 3.3-V LVTTL  ;
+; R3    ; data0_output[3]  ; 3.3-V LVTTL  ;
+; R4    ; data4_output[6]  ; 3.3-V LVTTL  ;
+; R5    ; data5_input[2]   ; 3.3-V LVTTL  ;
+; R6    ; GND+             ;              ;
+; R7    ; VCC_INT          ;              ;
+; R8    ; GND              ;              ;
+; R9    ; VCC_IO           ;              ;
+; R10   ; GND*             ;              ;
+; R11   ; data12_input[6]  ; 3.3-V LVTTL  ;
+; R12   ; data14_input[3]  ; 3.3-V LVTTL  ;
+; R13   ; data9_input[5]   ; 3.3-V LVTTL  ;
+; R14   ; VCC_INT          ;              ;
+; R15   ; GND              ;              ;
+; R16   ; VCC_IO           ;              ;
+; R17   ; data0_input[4]   ; 3.3-V LVTTL  ;
+; R18   ; data1_output[1]  ; 3.3-V LVTTL  ;
+; R19   ; GND*             ;              ;
+; R20   ; data0_output[6]  ; 3.3-V LVTTL  ;
+; R21   ; GND*             ;              ;
+; R22   ; data7_output[0]  ; 3.3-V LVTTL  ;
+; T1    ; GND*             ;              ;
+; T2    ; data5_input[6]   ; 3.3-V LVTTL  ;
+; T3    ; data12_input[1]  ; 3.3-V LVTTL  ;
+; T4    ; GND_CKOUT2       ;              ;
+; T5    ; VCC_CKOUT2       ;              ;
+; T6    ; GND*             ;              ;
+; T7    ; GND              ;              ;
+; T8    ; VCC_IO           ;              ;
+; T9    ; GND*             ;              ;
+; T10   ; GND*             ;              ;
+; T11   ; data7_output[2]  ; 3.3-V LVTTL  ;
+; T12   ; data6_input[3]   ; 3.3-V LVTTL  ;
+; T13   ; data12_output[3] ; 3.3-V LVTTL  ;
+; T14   ; GND*             ;              ;
+; T15   ; VCC_IO           ;              ;
+; T16   ; GND              ;              ;
+; T17   ; data12_input[2]  ; 3.3-V LVTTL  ;
+; T18   ; data14_output[3] ; 3.3-V LVTTL  ;
+; T19   ; data1_output[5]  ; 3.3-V LVTTL  ;
+; T20   ; data11_input[7]  ; 3.3-V LVTTL  ;
+; T21   ; data8_input[0]   ; 3.3-V LVTTL  ;
+; T22   ; clock            ; 3.3-V LVTTL  ;
+; U1    ; data15_input[5]  ; 3.3-V LVTTL  ;
+; U2    ; data5_input[0]   ; 3.3-V LVTTL  ;
+; U3    ; GND*             ;              ;
+; U4    ; data13_output[5] ; 3.3-V LVTTL  ;
+; U5    ; data2_output[0]  ; 3.3-V LVTTL  ;
+; U6    ; GND              ;              ;
+; U7    ; data14_output[7] ; 3.3-V LVTTL  ;
+; U8    ; GND*             ;              ;
+; U9    ; data13_output[6] ; 3.3-V LVTTL  ;
+; U10   ; data6_input[6]   ; 3.3-V LVTTL  ;
+; U11   ; data12_output[7] ; 3.3-V LVTTL  ;
+; U12   ; GND*             ;              ;
+; U13   ; GND*             ;              ;
+; U14   ; data12_output[1] ; 3.3-V LVTTL  ;
+; U15   ; GND*             ;              ;
+; U16   ; data13_input[2]  ; 3.3-V LVTTL  ;
+; U17   ; GND              ;              ;
+; U18   ; data11_input[0]  ; 3.3-V LVTTL  ;
+; U19   ; data1_input[5]   ; 3.3-V LVTTL  ;
+; U20   ; GND*             ;              ;
+; U21   ; data1_input[1]   ; 3.3-V LVTTL  ;
+; U22   ; data0_input[7]   ; 3.3-V LVTTL  ;
+; V1    ; data7_input[7]   ; 3.3-V LVTTL  ;
+; V2    ; data1_input[3]   ; 3.3-V LVTTL  ;
+; V3    ; GND*             ;              ;
+; V4    ; GND*             ;              ;
+; V5    ; data6_input[7]   ; 3.3-V LVTTL  ;
+; V6    ; data4_input[1]   ; 3.3-V LVTTL  ;
+; V7    ; data12_input[0]  ; 3.3-V LVTTL  ;
+; V8    ; data14_input[0]  ; 3.3-V LVTTL  ;
+; V9    ; GND*             ;              ;
+; V10   ; GND*             ;              ;
+; V11   ; GND+             ;              ;
+; V12   ; GND+             ;              ;
+; V13   ; data5_output[2]  ; 3.3-V LVTTL  ;
+; V14   ; data15_output[6] ; 3.3-V LVTTL  ;
+; V15   ; data5_input[3]   ; 3.3-V LVTTL  ;
+; V16   ; GND*             ;              ;
+; V17   ; GND*             ;              ;
+; V18   ; data7_input[1]   ; 3.3-V LVTTL  ;
+; V19   ; GND*             ;              ;
+; V20   ; data4_input[0]   ; 3.3-V LVTTL  ;
+; V21   ; data5_output[0]  ; 3.3-V LVTTL  ;
+; V22   ; data12_input[7]  ; 3.3-V LVTTL  ;
+; W1    ; data15_input[1]  ; 3.3-V LVTTL  ;
+; W2    ; data11_output[6] ; 3.3-V LVTTL  ;
+; W3    ; data0_input[1]   ; 3.3-V LVTTL  ;
+; W4    ; data0_output[1]  ; 3.3-V LVTTL  ;
+; W5    ; GND*             ;              ;
+; W6    ; data6_output[4]  ; 3.3-V LVTTL  ;
+; W7    ; data8_output[5]  ; 3.3-V LVTTL  ;
+; W8    ; data13_output[2] ; 3.3-V LVTTL  ;
+; W9    ; data9_input[3]   ; 3.3-V LVTTL  ;
+; W10   ; ^CONF_DONE       ;              ;
+; W11   ; ^NSTATUS         ;              ;
+; W12   ; #TCK             ;              ;
+; W13   ; #TMS             ;              ;
+; W14   ; data10_output[0] ; 3.3-V LVTTL  ;
+; W15   ; data9_output[4]  ; 3.3-V LVTTL  ;
+; W16   ; data13_output[1] ; 3.3-V LVTTL  ;
+; W17   ; GND*             ;              ;
+; W18   ; data3_output[2]  ; 3.3-V LVTTL  ;
+; W19   ; data2_output[4]  ; 3.3-V LVTTL  ;
+; W20   ; GND*             ;              ;
+; W21   ; data11_input[6]  ; 3.3-V LVTTL  ;
+; W22   ; data13_input[5]  ; 3.3-V LVTTL  ;
+; Y1    ; data1_output[3]  ; 3.3-V LVTTL  ;
+; Y2    ; data10_output[3] ; 3.3-V LVTTL  ;
+; Y3    ; data6_output[0]  ; 3.3-V LVTTL  ;
+; Y4    ; GND*             ;              ;
+; Y5    ; GND*             ;              ;
+; Y6    ; GND*             ;              ;
+; Y7    ; GND*             ;              ;
+; Y8    ; data9_input[7]   ; 3.3-V LVTTL  ;
+; Y9    ; GND*             ;              ;
+; Y10   ; data13_input[1]  ; 3.3-V LVTTL  ;
+; Y11   ; GND*             ;              ;
+; Y12   ; GND*             ;              ;
+; Y13   ; data4_output[3]  ; 3.3-V LVTTL  ;
+; Y14   ; data4_input[7]   ; 3.3-V LVTTL  ;
+; Y15   ; GND*             ;              ;
+; Y16   ; data13_input[6]  ; 3.3-V LVTTL  ;
+; Y17   ; GND*             ;              ;
+; Y18   ; GND*             ;              ;
+; Y19   ; data0_output[4]  ; 3.3-V LVTTL  ;
+; Y20   ; data14_output[2] ; 3.3-V LVTTL  ;
+; Y21   ; data2_input[4]   ; 3.3-V LVTTL  ;
+; Y22   ; data5_output[1]  ; 3.3-V LVTTL  ;
+; AA1   ; VCC_INT          ;              ;
+; AA2   ; GND              ;              ;
+; AA3   ; data4_input[2]   ; 3.3-V LVTTL  ;
+; AA4   ; data4_output[0]  ; 3.3-V LVTTL  ;
+; AA5   ; data9_output[6]  ; 3.3-V LVTTL  ;
+; AA6   ; data3_output[5]  ; 3.3-V LVTTL  ;
+; AA7   ; data11_output[1] ; 3.3-V LVTTL  ;
+; AA8   ; data7_output[5]  ; 3.3-V LVTTL  ;
+; AA9   ; data6_input[2]   ; 3.3-V LVTTL  ;
+; AA10  ; GND*             ;              ;
+; AA11  ; data3_output[0]  ; 3.3-V LVTTL  ;
+; AA12  ; data3_output[6]  ; 3.3-V LVTTL  ;
+; AA13  ; data3_input[2]   ; 3.3-V LVTTL  ;
+; AA14  ; GND*             ;              ;
+; AA15  ; data9_input[2]   ; 3.3-V LVTTL  ;
+; AA16  ; data6_input[5]   ; 3.3-V LVTTL  ;
+; AA17  ; data11_output[5] ; 3.3-V LVTTL  ;
+; AA18  ; data10_input[1]  ; 3.3-V LVTTL  ;
+; AA19  ; data11_output[7] ; 3.3-V LVTTL  ;
+; AA20  ; data14_input[7]  ; 3.3-V LVTTL  ;
+; AA21  ; GND              ;              ;
+; AA22  ; VCC_INT          ;              ;
+; AB1   ; GND              ;              ;
+; AB2   ; data13_input[0]  ; 3.3-V LVTTL  ;
+; AB3   ; data11_input[2]  ; 3.3-V LVTTL  ;
+; AB4   ; data12_output[5] ; 3.3-V LVTTL  ;
+; AB5   ; GND*             ;              ;
+; AB6   ; data3_input[5]   ; 3.3-V LVTTL  ;
+; AB7   ; data10_output[5] ; 3.3-V LVTTL  ;
+; AB8   ; data3_input[0]   ; 3.3-V LVTTL  ;
+; AB9   ; NC               ;              ;
+; AB10  ; NC               ;              ;
+; AB11  ; GND              ;              ;
+; AB12  ; NC               ;              ;
+; AB13  ; NC               ;              ;
+; AB14  ; NC               ;              ;
+; AB15  ; data3_input[6]   ; 3.3-V LVTTL  ;
+; AB16  ; GND*             ;              ;
+; AB17  ; GND*             ;              ;
+; AB18  ; data10_input[3]  ; 3.3-V LVTTL  ;
+; AB19  ; GND*             ;              ;
+; AB20  ; data4_output[2]  ; 3.3-V LVTTL  ;
+; AB21  ; GND*             ;              ;
+; AB22  ; GND              ;              ;
++-------+------------------+--------------+
+
+
++---------------------------------+
+; Non-Global High Fan-Out Signals ;
++----------------+----------------+
+; Name           ; Fan-Out        ;
++----------------+----------------+
+; data0_input[7] ; 1              ;
+; data0_input[5] ; 1              ;
+; data0_input[1] ; 1              ;
+; data1_input[1] ; 1              ;
+; data3_input[1] ; 1              ;
+; data3_input[2] ; 1              ;
+; data3_input[0] ; 1              ;
+; data3_input[3] ; 1              ;
+; data3_input[4] ; 1              ;
+; data3_input[5] ; 1              ;
+; data3_input[6] ; 1              ;
+; data3_input[7] ; 1              ;
+; data2_input[0] ; 1              ;
+; data2_input[1] ; 1              ;
+; data2_input[2] ; 1              ;
+; data2_input[3] ; 1              ;
+; data2_input[4] ; 1              ;
+; data2_input[5] ; 1              ;
+; data2_input[6] ; 1              ;
+; data2_input[7] ; 1              ;
+; data1_input[2] ; 1              ;
+; data1_input[0] ; 1              ;
+; data1_input[3] ; 1              ;
+; data1_input[4] ; 1              ;
+; data1_input[5] ; 1              ;
+; data1_input[6] ; 1              ;
+; data1_input[7] ; 1              ;
+; data0_input[2] ; 1              ;
+; data0_input[0] ; 1              ;
+; data0_input[3] ; 1              ;
+; data0_input[6] ; 1              ;
+; data0_input[4] ; 1              ;
++----------------+----------------+
+
+
++--------------------------------------------------+
+; Local Routing Interconnect                       ;
++-----------------------------+--------------------+
+; Local Routing Interconnects ; Number of MegaLABs ;
++-----------------------------+--------------------+
+; 0                           ; 25                 ;
+; 1                           ; 26                 ;
+; 2                           ; 1                  ;
++-----------------------------+--------------------+
+
+
++--------------------------------------------+
+; MegaLAB Interconnect                       ;
++-----------------------+--------------------+
+; MegaLAB Interconnects ; Number of MegaLABs ;
++-----------------------+--------------------+
+; 0                     ; 49                 ;
+; 1                     ; 2                  ;
+; 2                     ; 1                  ;
++-----------------------+--------------------+
+
+
++----------------------------------------------+
+; LAB External Interconnect                    ;
++----------------------------+-----------------+
+; LAB External Interconnects ; Number MegaLABs ;
++----------------------------+-----------------+
+; 0                          ; 49              ;
+; 1                          ; 2               ;
+; 2                          ; 1               ;
++----------------------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; MegaLAB Usage Summary                                                                                                                                                                                                                                                                            ;
++--------------+------------------+----------------------+-------------------------------------+--------------------------------------+----------------------------------+-----------------------------------+--------+---------+--------------------+---------------------------+-----------------+
+; MegaLAB Name ; Total Cells      ; MegaLAB Interconnect ; Column Fast Interconnect Driving In ; Column Fast Interconnect Driving Out ; Row Fast Interconnect Driving In ; Row Fast Interconnect Driving Out ; Fan-In ; Fan-Out ; Local Interconnect ; LAB External Interconnect ; Control Signals ;
++--------------+------------------+----------------------+-------------------------------------+--------------------------------------+----------------------------------+-----------------------------------+--------+---------+--------------------+---------------------------+-----------------+
+;  A1          ;  0 / 160 ( 0 % ) ; 2                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 1                  ; 2                         ; 0               ;
+;  A2          ;  0 / 160 ( 0 % ) ; 1                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 1                  ; 1                         ; 0               ;
+;  B1          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 1                  ; 0                         ; 0               ;
+;  B2          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 1                  ; 0                         ; 0               ;
+;  C1          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 0                  ; 0                         ; 0               ;
+;  C2          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 1                  ; 0                         ; 0               ;
+;  D1          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 0                  ; 0                         ; 0               ;
+;  D2          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 0                  ; 0                         ; 0               ;
+;  E1          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 0                  ; 0                         ; 0               ;
+;  E2          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 0                  ; 0                         ; 0               ;
+;  F1          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 1                  ; 0                         ; 0               ;
+;  F2          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 1                  ; 0                         ; 0               ;
+;  G1          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 1                  ; 0                         ; 0               ;
+;  G2          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 0                  ; 0                         ; 0               ;
+;  H1          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 0                  ; 0                         ; 0               ;
+;  H2          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 1                  ; 0                         ; 0               ;
+;  I1          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 0                  ; 0                         ; 0               ;
+;  I2          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 1                  ; 0                         ; 0               ;
+;  J1          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 1                  ; 0                         ; 0               ;
+;  J2          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 0                  ; 0                         ; 0               ;
+;  K1          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 0                  ; 0                         ; 0               ;
+;  K2          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 1                  ; 0                         ; 0               ;
+;  L1          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 0                  ; 0                         ; 0               ;
+;  L2          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 0                  ; 0                         ; 0               ;
+;  M1          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 0                  ; 0                         ; 0               ;
+;  M2          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 1                  ; 0                         ; 0               ;
+;  N1          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 0                  ; 0                         ; 0               ;
+;  N2          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 0                  ; 0                         ; 0               ;
+;  O1          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 2                  ; 0                         ; 0               ;
+;  O2          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 0                  ; 0                         ; 0               ;
+;  P1          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 0                  ; 0                         ; 0               ;
+;  P2          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 1                  ; 0                         ; 0               ;
+;  Q1          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 1                  ; 0                         ; 0               ;
+;  Q2          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 0                  ; 0                         ; 0               ;
+;  R1          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 1                  ; 0                         ; 0               ;
+;  R2          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 1                  ; 0                         ; 0               ;
+;  S1          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 0                  ; 0                         ; 0               ;
+;  S2          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 1                  ; 0                         ; 0               ;
+;  T1          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 0                  ; 0                         ; 0               ;
+;  T2          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 1                  ; 0                         ; 0               ;
+;  U1          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 1                  ; 0                         ; 0               ;
+;  U2          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 1                  ; 0                         ; 0               ;
+;  V1          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 0                  ; 0                         ; 0               ;
+;  V2          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 1                  ; 0                         ; 0               ;
+;  W1          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 1                  ; 0                         ; 0               ;
+;  W2          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 0                  ; 0                         ; 0               ;
+;  X1          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 0                  ; 0                         ; 0               ;
+;  X2          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 0                  ; 0                         ; 0               ;
+;  Y1          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 1                  ; 0                         ; 0               ;
+;  Y2          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 1       ; 0                  ; 0                         ; 0               ;
+;  Z1          ;  0 / 160 ( 0 % ) ; 0                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 1                  ; 0                         ; 0               ;
+;  Z2          ;  0 / 160 ( 0 % ) ; 1                    ; 0                                   ; 0                                    ; 0                                ; 0                                 ; 0      ; 0       ; 1                  ; 1                         ; 0               ;
++--------------+------------------+----------------------+-------------------------------------+--------------------------------------+----------------------------------+-----------------------------------+--------+---------+--------------------+---------------------------+-----------------+
+
+
++-----------------------------------------------------------------------------+
+; Row Interconnect                                                            ;
++-------+------------------------+-------------------+------------------------+
+; Row   ; Interconnect Available ; Interconnect Used ; Half Interconnect Used ;
++-------+------------------------+-------------------+------------------------+
+;  A    ; 100                    ;  0 / 100 ( 0 % )  ;  0 / 200 ( 0 % )       ;
+;  B    ; 100                    ;  0 / 100 ( 0 % )  ;  0 / 200 ( 0 % )       ;
+;  C    ; 100                    ;  0 / 100 ( 0 % )  ;  0 / 200 ( 0 % )       ;
+;  D    ; 100                    ;  0 / 100 ( 0 % )  ;  0 / 200 ( 0 % )       ;
+;  E    ; 100                    ;  0 / 100 ( 0 % )  ;  0 / 200 ( 0 % )       ;
+;  F    ; 100                    ;  0 / 100 ( 0 % )  ;  0 / 200 ( 0 % )       ;
+;  G    ; 100                    ;  0 / 100 ( 0 % )  ;  0 / 200 ( 0 % )       ;
+;  H    ; 100                    ;  0 / 100 ( 0 % )  ;  0 / 200 ( 0 % )       ;
+;  I    ; 100                    ;  0 / 100 ( 0 % )  ;  0 / 200 ( 0 % )       ;
+;  J    ; 100                    ;  0 / 100 ( 0 % )  ;  0 / 200 ( 0 % )       ;
+;  K    ; 100                    ;  0 / 100 ( 0 % )  ;  0 / 200 ( 0 % )       ;
+;  L    ; 100                    ;  0 / 100 ( 0 % )  ;  0 / 200 ( 0 % )       ;
+;  M    ; 100                    ;  0 / 100 ( 0 % )  ;  0 / 200 ( 0 % )       ;
+;  N    ; 100                    ;  0 / 100 ( 0 % )  ;  0 / 200 ( 0 % )       ;
+;  O    ; 100                    ;  0 / 100 ( 0 % )  ;  0 / 200 ( 0 % )       ;
+;  P    ; 100                    ;  0 / 100 ( 0 % )  ;  0 / 200 ( 0 % )       ;
+;  Q    ; 100                    ;  0 / 100 ( 0 % )  ;  0 / 200 ( 0 % )       ;
+;  R    ; 100                    ;  0 / 100 ( 0 % )  ;  0 / 200 ( 0 % )       ;
+;  S    ; 100                    ;  0 / 100 ( 0 % )  ;  0 / 200 ( 0 % )       ;
+;  T    ; 100                    ;  0 / 100 ( 0 % )  ;  0 / 200 ( 0 % )       ;
+;  U    ; 100                    ;  0 / 100 ( 0 % )  ;  0 / 200 ( 0 % )       ;
+;  V    ; 100                    ;  0 / 100 ( 0 % )  ;  0 / 200 ( 0 % )       ;
+;  W    ; 100                    ;  0 / 100 ( 0 % )  ;  0 / 200 ( 0 % )       ;
+;  X    ; 100                    ;  0 / 100 ( 0 % )  ;  0 / 200 ( 0 % )       ;
+;  Y    ; 100                    ;  0 / 100 ( 0 % )  ;  0 / 200 ( 0 % )       ;
+;  Z    ; 100                    ;  0 / 100 ( 0 % )  ;  0 / 200 ( 0 % )       ;
+; Total ; 2600                   ;  0 / 2600 ( 0 % ) ;  0 / 5200 ( 0 % )      ;
++-------+------------------------+-------------------+------------------------+
+
+
++-------------------------------------------------------------------------------------------+
+; LAB Column Interconnect                                                                   ;
++--------------+------+------------------------+-------------------+------------------------+
+; MegaLAB Col. ; Col. ; Interconnect Available ; Interconnect Used ; Half Interconnect Used ;
++--------------+------+------------------------+-------------------+------------------------+
+; 1            ; 1    ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 1            ; 2    ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 1            ; 3    ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 1            ; 4    ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 1            ; 5    ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 1            ; 6    ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 1            ; 7    ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 1            ; 8    ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 1            ; 9    ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 1            ; 10   ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 1            ; 11   ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 1            ; 12   ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 1            ; 13   ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 1            ; 14   ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 1            ; 15   ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 1            ; 16   ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 1            ; 17   ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 2            ; 1    ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 2            ; 2    ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 2            ; 3    ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 2            ; 4    ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 2            ; 5    ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 2            ; 6    ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 2            ; 7    ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 2            ; 8    ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 2            ; 9    ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 2            ; 10   ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 2            ; 11   ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 2            ; 12   ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 2            ; 13   ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 2            ; 14   ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 2            ; 15   ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 2            ; 16   ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; 2            ; 17   ; 80                     ;  0 / 80 ( 0 % )   ;  0 / 160 ( 0 % )       ;
+; Total        ;      ; 2720                   ;  0 / 2720 ( 0 % ) ;  0 / 5440 ( 0 % )      ;
++--------------+------+------------------------+-------------------+------------------------+
+
+
++-----------------------------------------------------------------------------+
+; ESB Column Interconnect                                                     ;
++-------+------------------------+-------------------+------------------------+
+; Col.  ; Interconnect Available ; Interconnect Used ; Half Interconnect Used ;
++-------+------------------------+-------------------+------------------------+
+; 0     ; 128                    ;  0 / 128 ( 0 % )  ;  0 / 256 ( 0 % )       ;
+; 1     ; 128                    ;  0 / 128 ( 0 % )  ;  0 / 256 ( 0 % )       ;
+; Total ; 256                    ;  0 / 256 ( 0 % )  ;  0 / 512 ( 0 % )       ;
++-------+------------------------+-------------------+------------------------+
+
+
++---------------------------------------------------------+
+; Fitter Resource Usage Summary                           ;
++-----------------------------------+---------------------+
+; Resource                          ; Usage               ;
++-----------------------------------+---------------------+
+; Total logic elements              ; 0 / 8,320 ( 0 % )   ;
+; Registers                         ; 0 / 8,320 ( 0 % )   ;
+; Logic elements in carry chains    ; 0                   ;
+; User inserted logic elements      ; 0                   ;
+; Virtual pins                      ; 0                   ;
+; I/O pins                          ; 257 / 376 ( 68 % )  ;
+;     -- Clock pins                 ; 5 / 4 ( 125 % )     ;
+;     -- Dedicated input pins       ; 4 / 4 ( 100 % )     ;
+; Global signals                    ; 0                   ;
+; ESBs                              ; 0 / 52 ( 0 % )      ;
+; Macrocells                        ; 0 / 832 ( 0 % )     ;
+; ESB pterm bits used               ; 0 / 106,496 ( 0 % ) ;
+; ESB CAM bits used                 ; 0 / 106,496 ( 0 % ) ;
+; Total memory bits                 ; 0 / 106,496 ( 0 % ) ;
+; Total RAM block bits              ; 0 / 106,496 ( 0 % ) ;
+; FastRow interconnects             ; 0 / 120 ( 0 % )     ;
+; PLLs                              ; 0 / 2 ( 0 % )       ;
+; ELAs                              ; 0 / 4 ( 0 % )       ;
+; Maximum fan-out node              ; data0_input[7]      ;
+; Maximum fan-out                   ; 1                   ;
+; Highest non-global fan-out signal ; data0_input[7]      ;
+; Highest non-global fan-out        ; 1                   ;
+; Total fan-out                     ; 32                  ;
+; Average fan-out                   ; 0.12                ;
++-----------------------------------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                 ;
++----------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
+; |aes_quartus               ; 0 (0)       ; 0            ; 0           ; 257  ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |aes_quartus        ; work         ;
++----------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Delay Chain Summary                                                                                                     ;
++------------------+----------+-------------+-----------------------+-------------------------+---------------------+-----+
+; Name             ; Pin Type ; Pad to Core ; Pad to Input Register ; Core to Output Register ; Core to CE Register ; TCO ;
++------------------+----------+-------------+-----------------------+-------------------------+---------------------+-----+
+; data10_input[7]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data10_input[6]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data10_input[5]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data10_input[4]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data10_input[3]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data10_input[2]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data10_input[1]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data10_input[0]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data11_input[7]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data11_input[6]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data11_input[5]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data11_input[4]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data11_input[3]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data11_input[2]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data11_input[1]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data11_input[0]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data12_input[7]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data12_input[6]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data12_input[5]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data12_input[4]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data12_input[3]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data12_input[2]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data12_input[1]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data12_input[0]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data13_input[7]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data13_input[6]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data13_input[5]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data13_input[4]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data13_input[3]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data13_input[2]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data13_input[1]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data13_input[0]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data14_input[7]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data14_input[6]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data14_input[5]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data14_input[4]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data14_input[3]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data14_input[2]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data14_input[1]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data14_input[0]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data15_input[7]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data15_input[6]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data15_input[5]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data15_input[4]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data15_input[3]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data15_input[2]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data15_input[1]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data15_input[0]  ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data4_input[7]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data4_input[6]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data4_input[5]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data4_input[4]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data4_input[3]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data4_input[2]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data4_input[1]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data4_input[0]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data5_input[7]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data5_input[6]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data5_input[5]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data5_input[4]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data5_input[3]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data5_input[2]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data5_input[1]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data5_input[0]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data6_input[7]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data6_input[6]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data6_input[5]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data6_input[4]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data6_input[3]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data6_input[2]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data6_input[1]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data6_input[0]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data7_input[7]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data7_input[6]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data7_input[5]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data7_input[4]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data7_input[3]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data7_input[2]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data7_input[1]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data7_input[0]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data8_input[7]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data8_input[6]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data8_input[5]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data8_input[4]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data8_input[3]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data8_input[2]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data8_input[1]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data8_input[0]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data9_input[7]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data9_input[6]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data9_input[5]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data9_input[4]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data9_input[3]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data9_input[2]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data9_input[1]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data9_input[0]   ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; clock            ; Input    ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data0_input[7]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data0_input[6]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data0_input[5]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data0_input[4]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data0_input[3]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data0_input[2]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data0_input[1]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data0_input[0]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data1_input[7]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data1_input[6]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data1_input[5]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data1_input[4]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data1_input[3]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data1_input[2]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data1_input[1]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data1_input[0]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data2_input[7]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data2_input[6]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data2_input[5]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data2_input[4]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data2_input[3]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data2_input[2]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data2_input[1]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data2_input[0]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data3_input[7]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data3_input[6]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data3_input[5]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data3_input[4]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data3_input[3]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data3_input[2]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data3_input[1]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data3_input[0]   ; Input    ; ON          ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data0_output[7]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data0_output[6]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data0_output[5]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data0_output[4]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data0_output[3]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data0_output[2]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data0_output[1]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data0_output[0]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data10_output[7] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data10_output[6] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data10_output[5] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data10_output[4] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data10_output[3] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data10_output[2] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data10_output[1] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data10_output[0] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data11_output[7] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data11_output[6] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data11_output[5] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data11_output[4] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data11_output[3] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data11_output[2] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data11_output[1] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data11_output[0] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data12_output[7] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data12_output[6] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data12_output[5] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data12_output[4] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data12_output[3] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data12_output[2] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data12_output[1] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data12_output[0] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data13_output[7] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data13_output[6] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data13_output[5] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data13_output[4] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data13_output[3] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data13_output[2] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data13_output[1] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data13_output[0] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data14_output[7] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data14_output[6] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data14_output[5] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data14_output[4] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data14_output[3] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data14_output[2] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data14_output[1] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data14_output[0] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data15_output[7] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data15_output[6] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data15_output[5] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data15_output[4] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data15_output[3] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data15_output[2] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data15_output[1] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data15_output[0] ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data1_output[7]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data1_output[6]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data1_output[5]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data1_output[4]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data1_output[3]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data1_output[2]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data1_output[1]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data1_output[0]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data2_output[7]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data2_output[6]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data2_output[5]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data2_output[4]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data2_output[3]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data2_output[2]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data2_output[1]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data2_output[0]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data3_output[7]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data3_output[6]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data3_output[5]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data3_output[4]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data3_output[3]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data3_output[2]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data3_output[1]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data3_output[0]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data4_output[7]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data4_output[6]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data4_output[5]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data4_output[4]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data4_output[3]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data4_output[2]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data4_output[1]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data4_output[0]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data5_output[7]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data5_output[6]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data5_output[5]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data5_output[4]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data5_output[3]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data5_output[2]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data5_output[1]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data5_output[0]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data6_output[7]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data6_output[6]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data6_output[5]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data6_output[4]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data6_output[3]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data6_output[2]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data6_output[1]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data6_output[0]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data7_output[7]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data7_output[6]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data7_output[5]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data7_output[4]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data7_output[3]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data7_output[2]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data7_output[1]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data7_output[0]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data8_output[7]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data8_output[6]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data8_output[5]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data8_output[4]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data8_output[3]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data8_output[2]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data8_output[1]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data8_output[0]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data9_output[7]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data9_output[6]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data9_output[5]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data9_output[4]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data9_output[3]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data9_output[2]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data9_output[1]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
+; data9_output[0]  ; Output   ; OFF         ; OFF                   ; OFF                     ; OFF                 ; OFF ;
++------------------+----------+-------------+-----------------------+-------------------------+---------------------+-----+
+
+
++-----------------------------+
+; I/O Bank Usage              ;
++----------+------------------+
+; I/O Bank ; Usage            ;
++----------+------------------+
+; 1        ; 17 / 32 ( 53 % ) ;
+; 2        ; 21 / 30 ( 70 % ) ;
+; 3        ; 51 / 64 ( 80 % ) ;
+; 4        ; 45 / 65 ( 69 % ) ;
+; 5        ; 19 / 32 ( 59 % ) ;
+; 6        ; 16 / 30 ( 53 % ) ;
+; 7        ; 49 / 61 ( 80 % ) ;
+; 8        ; 39 / 62 ( 63 % ) ;
+; 9        ; 0 / 0 ( -- )     ;
++----------+------------------+
+
+
++--------------+
+; Pin-Out File ;
++--------------+
+The pin-out file can be found in D:/Development/AES/aes_quartus/aes_quartus.pin.
+
+
++-----------------+
+; Fitter Messages ;
++-----------------+
+Info: *******************************************************************
+Info: Running Quartus II Fitter
+    Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
+    Info: Processing started: Wed Sep 26 15:11:23 2018
+Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off aes_quartus -c aes_quartus
+Info: Selected device EP20K200EFI484-2X for design "aes_quartus"
+Warning: Feature SignalProbe is not available with your current license
+Info: Fitter is using the Classic Timing Analyzer
+Info: Timing requirements not specified -- optimizing circuit to achieve the following default global requirements
+    Info: Assuming a global fmax requirement of 1000 MHz
+    Info: Not setting a global tsu requirement
+    Info: Not setting a global tco requirement
+    Info: Not setting a global tpd requirement
+Warning: Feature LogicLock is not available with your current license
+Info: Started fitting attempt 1 on Wed Sep 26 2018 at 15:11:24
+Info: Fitter placement preparation operations beginning
+Info: Fitter placement preparation operations ending: elapsed time is 00:00:00
+Info: Fitter placement operations beginning
+Info: Fitter placement was successful
+Info: Design requires the following device routing resources:
+    Info: Overall column FastTrack interconnect = 0%
+    Info: Overall row FastTrack interconnect = 0%
+    Info: Maximum column FastTrack interconnect = 0%
+    Info: Maximum row FastTrack interconnect = 0%
+Info: Fitter placement operations ending: elapsed time is 00:00:01
+Info: Fitter routing operations beginning
+Info: Fitter routing operations ending: elapsed time is 00:00:00
+Info: Quartus II Fitter was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 285 megabytes
+    Info: Processing ended: Wed Sep 26 15:11:26 2018
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
+
+
