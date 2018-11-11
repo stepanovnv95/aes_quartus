@@ -24,9 +24,9 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 925952;
-		NUMERATOR = 961;
-		DENOMINATOR = 925952;
+		ZEND = 217760;
+		NUMERATOR = 955;
+		DENOMINATOR = 217760;
 		TOP_INDEX = 0;
 	}
 	CLOCK{
@@ -38,15 +38,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		INTERVAL_TYPE = HALF_GRID;
 	}
 	LINE{
-		SIGNAL = "data0_input";
+		SIGNAL = "clock";
 		INDEX = 0;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_input[7]";
+		SIGNAL = "enable";
 		INDEX = 1;
 		FORMAT = E;
 		SCALE = 1;
@@ -54,7 +54,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_input[6]";
+		SIGNAL = "on_ready";
 		INDEX = 2;
 		FORMAT = E;
 		SCALE = 1;
@@ -62,15 +62,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_input[5]";
+		SIGNAL = "data0_input";
 		INDEX = 3;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_input[4]";
+		SIGNAL = "data0_input[7]";
 		INDEX = 4;
 		FORMAT = E;
 		SCALE = 1;
@@ -78,7 +78,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_input[3]";
+		SIGNAL = "data0_input[6]";
 		INDEX = 5;
 		FORMAT = E;
 		SCALE = 1;
@@ -86,7 +86,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_input[2]";
+		SIGNAL = "data0_input[5]";
 		INDEX = 6;
 		FORMAT = E;
 		SCALE = 1;
@@ -94,7 +94,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_input[1]";
+		SIGNAL = "data0_input[4]";
 		INDEX = 7;
 		FORMAT = E;
 		SCALE = 1;
@@ -102,7 +102,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_input[0]";
+		SIGNAL = "data0_input[3]";
 		INDEX = 8;
 		FORMAT = E;
 		SCALE = 1;
@@ -110,15 +110,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_input";
+		SIGNAL = "data0_input[2]";
 		INDEX = 9;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_input[7]";
+		SIGNAL = "data0_input[1]";
 		INDEX = 10;
 		FORMAT = E;
 		SCALE = 1;
@@ -126,7 +126,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_input[6]";
+		SIGNAL = "data0_input[0]";
 		INDEX = 11;
 		FORMAT = E;
 		SCALE = 1;
@@ -134,15 +134,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_input[5]";
+		SIGNAL = "data1_input";
 		INDEX = 12;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_input[4]";
+		SIGNAL = "data1_input[7]";
 		INDEX = 13;
 		FORMAT = E;
 		SCALE = 1;
@@ -150,7 +150,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_input[3]";
+		SIGNAL = "data1_input[6]";
 		INDEX = 14;
 		FORMAT = E;
 		SCALE = 1;
@@ -158,7 +158,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_input[2]";
+		SIGNAL = "data1_input[5]";
 		INDEX = 15;
 		FORMAT = E;
 		SCALE = 1;
@@ -166,7 +166,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_input[1]";
+		SIGNAL = "data1_input[4]";
 		INDEX = 16;
 		FORMAT = E;
 		SCALE = 1;
@@ -174,7 +174,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_input[0]";
+		SIGNAL = "data1_input[3]";
 		INDEX = 17;
 		FORMAT = E;
 		SCALE = 1;
@@ -182,15 +182,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_input";
+		SIGNAL = "data1_input[2]";
 		INDEX = 18;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_input[7]";
+		SIGNAL = "data1_input[1]";
 		INDEX = 19;
 		FORMAT = E;
 		SCALE = 1;
@@ -198,7 +198,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_input[6]";
+		SIGNAL = "data1_input[0]";
 		INDEX = 20;
 		FORMAT = E;
 		SCALE = 1;
@@ -206,15 +206,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_input[5]";
+		SIGNAL = "data2_input";
 		INDEX = 21;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_input[4]";
+		SIGNAL = "data2_input[7]";
 		INDEX = 22;
 		FORMAT = E;
 		SCALE = 1;
@@ -222,7 +222,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_input[3]";
+		SIGNAL = "data2_input[6]";
 		INDEX = 23;
 		FORMAT = E;
 		SCALE = 1;
@@ -230,7 +230,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_input[2]";
+		SIGNAL = "data2_input[5]";
 		INDEX = 24;
 		FORMAT = E;
 		SCALE = 1;
@@ -238,7 +238,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_input[1]";
+		SIGNAL = "data2_input[4]";
 		INDEX = 25;
 		FORMAT = E;
 		SCALE = 1;
@@ -246,7 +246,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_input[0]";
+		SIGNAL = "data2_input[3]";
 		INDEX = 26;
 		FORMAT = E;
 		SCALE = 1;
@@ -254,15 +254,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_input";
+		SIGNAL = "data2_input[2]";
 		INDEX = 27;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_input[7]";
+		SIGNAL = "data2_input[1]";
 		INDEX = 28;
 		FORMAT = E;
 		SCALE = 1;
@@ -270,7 +270,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_input[6]";
+		SIGNAL = "data2_input[0]";
 		INDEX = 29;
 		FORMAT = E;
 		SCALE = 1;
@@ -278,15 +278,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_input[5]";
+		SIGNAL = "data3_input";
 		INDEX = 30;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_input[4]";
+		SIGNAL = "data3_input[7]";
 		INDEX = 31;
 		FORMAT = E;
 		SCALE = 1;
@@ -294,7 +294,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_input[3]";
+		SIGNAL = "data3_input[6]";
 		INDEX = 32;
 		FORMAT = E;
 		SCALE = 1;
@@ -302,7 +302,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_input[2]";
+		SIGNAL = "data3_input[5]";
 		INDEX = 33;
 		FORMAT = E;
 		SCALE = 1;
@@ -310,7 +310,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_input[1]";
+		SIGNAL = "data3_input[4]";
 		INDEX = 34;
 		FORMAT = E;
 		SCALE = 1;
@@ -318,7 +318,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_input[0]";
+		SIGNAL = "data3_input[3]";
 		INDEX = 35;
 		FORMAT = E;
 		SCALE = 1;
@@ -326,15 +326,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_input";
+		SIGNAL = "data3_input[2]";
 		INDEX = 36;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_input[7]";
+		SIGNAL = "data3_input[1]";
 		INDEX = 37;
 		FORMAT = E;
 		SCALE = 1;
@@ -342,7 +342,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_input[6]";
+		SIGNAL = "data3_input[0]";
 		INDEX = 38;
 		FORMAT = E;
 		SCALE = 1;
@@ -350,15 +350,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_input[5]";
+		SIGNAL = "data4_input";
 		INDEX = 39;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_input[4]";
+		SIGNAL = "data4_input[7]";
 		INDEX = 40;
 		FORMAT = E;
 		SCALE = 1;
@@ -366,7 +366,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_input[3]";
+		SIGNAL = "data4_input[6]";
 		INDEX = 41;
 		FORMAT = E;
 		SCALE = 1;
@@ -374,7 +374,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_input[2]";
+		SIGNAL = "data4_input[5]";
 		INDEX = 42;
 		FORMAT = E;
 		SCALE = 1;
@@ -382,7 +382,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_input[1]";
+		SIGNAL = "data4_input[4]";
 		INDEX = 43;
 		FORMAT = E;
 		SCALE = 1;
@@ -390,7 +390,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_input[0]";
+		SIGNAL = "data4_input[3]";
 		INDEX = 44;
 		FORMAT = E;
 		SCALE = 1;
@@ -398,15 +398,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_input";
+		SIGNAL = "data4_input[2]";
 		INDEX = 45;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_input[7]";
+		SIGNAL = "data4_input[1]";
 		INDEX = 46;
 		FORMAT = E;
 		SCALE = 1;
@@ -414,7 +414,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_input[6]";
+		SIGNAL = "data4_input[0]";
 		INDEX = 47;
 		FORMAT = E;
 		SCALE = 1;
@@ -422,15 +422,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_input[5]";
+		SIGNAL = "data5_input";
 		INDEX = 48;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_input[4]";
+		SIGNAL = "data5_input[7]";
 		INDEX = 49;
 		FORMAT = E;
 		SCALE = 1;
@@ -438,7 +438,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_input[3]";
+		SIGNAL = "data5_input[6]";
 		INDEX = 50;
 		FORMAT = E;
 		SCALE = 1;
@@ -446,7 +446,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_input[2]";
+		SIGNAL = "data5_input[5]";
 		INDEX = 51;
 		FORMAT = E;
 		SCALE = 1;
@@ -454,7 +454,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_input[1]";
+		SIGNAL = "data5_input[4]";
 		INDEX = 52;
 		FORMAT = E;
 		SCALE = 1;
@@ -462,7 +462,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_input[0]";
+		SIGNAL = "data5_input[3]";
 		INDEX = 53;
 		FORMAT = E;
 		SCALE = 1;
@@ -470,15 +470,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_input";
+		SIGNAL = "data5_input[2]";
 		INDEX = 54;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_input[7]";
+		SIGNAL = "data5_input[1]";
 		INDEX = 55;
 		FORMAT = E;
 		SCALE = 1;
@@ -486,7 +486,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_input[6]";
+		SIGNAL = "data5_input[0]";
 		INDEX = 56;
 		FORMAT = E;
 		SCALE = 1;
@@ -494,15 +494,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_input[5]";
+		SIGNAL = "data6_input";
 		INDEX = 57;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_input[4]";
+		SIGNAL = "data6_input[7]";
 		INDEX = 58;
 		FORMAT = E;
 		SCALE = 1;
@@ -510,7 +510,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_input[3]";
+		SIGNAL = "data6_input[6]";
 		INDEX = 59;
 		FORMAT = E;
 		SCALE = 1;
@@ -518,7 +518,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_input[2]";
+		SIGNAL = "data6_input[5]";
 		INDEX = 60;
 		FORMAT = E;
 		SCALE = 1;
@@ -526,7 +526,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_input[1]";
+		SIGNAL = "data6_input[4]";
 		INDEX = 61;
 		FORMAT = E;
 		SCALE = 1;
@@ -534,7 +534,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_input[0]";
+		SIGNAL = "data6_input[3]";
 		INDEX = 62;
 		FORMAT = E;
 		SCALE = 1;
@@ -542,15 +542,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_input";
+		SIGNAL = "data6_input[2]";
 		INDEX = 63;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_input[7]";
+		SIGNAL = "data6_input[1]";
 		INDEX = 64;
 		FORMAT = E;
 		SCALE = 1;
@@ -558,7 +558,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_input[6]";
+		SIGNAL = "data6_input[0]";
 		INDEX = 65;
 		FORMAT = E;
 		SCALE = 1;
@@ -566,15 +566,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_input[5]";
+		SIGNAL = "data7_input";
 		INDEX = 66;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_input[4]";
+		SIGNAL = "data7_input[7]";
 		INDEX = 67;
 		FORMAT = E;
 		SCALE = 1;
@@ -582,7 +582,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_input[3]";
+		SIGNAL = "data7_input[6]";
 		INDEX = 68;
 		FORMAT = E;
 		SCALE = 1;
@@ -590,7 +590,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_input[2]";
+		SIGNAL = "data7_input[5]";
 		INDEX = 69;
 		FORMAT = E;
 		SCALE = 1;
@@ -598,7 +598,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_input[1]";
+		SIGNAL = "data7_input[4]";
 		INDEX = 70;
 		FORMAT = E;
 		SCALE = 1;
@@ -606,7 +606,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_input[0]";
+		SIGNAL = "data7_input[3]";
 		INDEX = 71;
 		FORMAT = E;
 		SCALE = 1;
@@ -614,15 +614,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_input";
+		SIGNAL = "data7_input[2]";
 		INDEX = 72;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_input[7]";
+		SIGNAL = "data7_input[1]";
 		INDEX = 73;
 		FORMAT = E;
 		SCALE = 1;
@@ -630,7 +630,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_input[6]";
+		SIGNAL = "data7_input[0]";
 		INDEX = 74;
 		FORMAT = E;
 		SCALE = 1;
@@ -638,15 +638,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_input[5]";
+		SIGNAL = "data8_input";
 		INDEX = 75;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_input[4]";
+		SIGNAL = "data8_input[7]";
 		INDEX = 76;
 		FORMAT = E;
 		SCALE = 1;
@@ -654,7 +654,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_input[3]";
+		SIGNAL = "data8_input[6]";
 		INDEX = 77;
 		FORMAT = E;
 		SCALE = 1;
@@ -662,7 +662,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_input[2]";
+		SIGNAL = "data8_input[5]";
 		INDEX = 78;
 		FORMAT = E;
 		SCALE = 1;
@@ -670,7 +670,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_input[1]";
+		SIGNAL = "data8_input[4]";
 		INDEX = 79;
 		FORMAT = E;
 		SCALE = 1;
@@ -678,7 +678,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_input[0]";
+		SIGNAL = "data8_input[3]";
 		INDEX = 80;
 		FORMAT = E;
 		SCALE = 1;
@@ -686,15 +686,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_input";
+		SIGNAL = "data8_input[2]";
 		INDEX = 81;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_input[7]";
+		SIGNAL = "data8_input[1]";
 		INDEX = 82;
 		FORMAT = E;
 		SCALE = 1;
@@ -702,7 +702,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_input[6]";
+		SIGNAL = "data8_input[0]";
 		INDEX = 83;
 		FORMAT = E;
 		SCALE = 1;
@@ -710,15 +710,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_input[5]";
+		SIGNAL = "data9_input";
 		INDEX = 84;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_input[4]";
+		SIGNAL = "data9_input[7]";
 		INDEX = 85;
 		FORMAT = E;
 		SCALE = 1;
@@ -726,7 +726,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_input[3]";
+		SIGNAL = "data9_input[6]";
 		INDEX = 86;
 		FORMAT = E;
 		SCALE = 1;
@@ -734,7 +734,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_input[2]";
+		SIGNAL = "data9_input[5]";
 		INDEX = 87;
 		FORMAT = E;
 		SCALE = 1;
@@ -742,7 +742,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_input[1]";
+		SIGNAL = "data9_input[4]";
 		INDEX = 88;
 		FORMAT = E;
 		SCALE = 1;
@@ -750,7 +750,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_input[0]";
+		SIGNAL = "data9_input[3]";
 		INDEX = 89;
 		FORMAT = E;
 		SCALE = 1;
@@ -758,15 +758,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_input";
+		SIGNAL = "data9_input[2]";
 		INDEX = 90;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_input[7]";
+		SIGNAL = "data9_input[1]";
 		INDEX = 91;
 		FORMAT = E;
 		SCALE = 1;
@@ -774,7 +774,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_input[6]";
+		SIGNAL = "data9_input[0]";
 		INDEX = 92;
 		FORMAT = E;
 		SCALE = 1;
@@ -782,15 +782,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_input[5]";
+		SIGNAL = "data10_input";
 		INDEX = 93;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_input[4]";
+		SIGNAL = "data10_input[7]";
 		INDEX = 94;
 		FORMAT = E;
 		SCALE = 1;
@@ -798,7 +798,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_input[3]";
+		SIGNAL = "data10_input[6]";
 		INDEX = 95;
 		FORMAT = E;
 		SCALE = 1;
@@ -806,7 +806,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_input[2]";
+		SIGNAL = "data10_input[5]";
 		INDEX = 96;
 		FORMAT = E;
 		SCALE = 1;
@@ -814,7 +814,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_input[1]";
+		SIGNAL = "data10_input[4]";
 		INDEX = 97;
 		FORMAT = E;
 		SCALE = 1;
@@ -822,7 +822,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_input[0]";
+		SIGNAL = "data10_input[3]";
 		INDEX = 98;
 		FORMAT = E;
 		SCALE = 1;
@@ -830,15 +830,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_input";
+		SIGNAL = "data10_input[2]";
 		INDEX = 99;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_input[7]";
+		SIGNAL = "data10_input[1]";
 		INDEX = 100;
 		FORMAT = E;
 		SCALE = 1;
@@ -846,7 +846,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_input[6]";
+		SIGNAL = "data10_input[0]";
 		INDEX = 101;
 		FORMAT = E;
 		SCALE = 1;
@@ -854,15 +854,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_input[5]";
+		SIGNAL = "data11_input";
 		INDEX = 102;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_input[4]";
+		SIGNAL = "data11_input[7]";
 		INDEX = 103;
 		FORMAT = E;
 		SCALE = 1;
@@ -870,7 +870,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_input[3]";
+		SIGNAL = "data11_input[6]";
 		INDEX = 104;
 		FORMAT = E;
 		SCALE = 1;
@@ -878,7 +878,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_input[2]";
+		SIGNAL = "data11_input[5]";
 		INDEX = 105;
 		FORMAT = E;
 		SCALE = 1;
@@ -886,7 +886,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_input[1]";
+		SIGNAL = "data11_input[4]";
 		INDEX = 106;
 		FORMAT = E;
 		SCALE = 1;
@@ -894,7 +894,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_input[0]";
+		SIGNAL = "data11_input[3]";
 		INDEX = 107;
 		FORMAT = E;
 		SCALE = 1;
@@ -902,15 +902,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_input";
+		SIGNAL = "data11_input[2]";
 		INDEX = 108;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_input[7]";
+		SIGNAL = "data11_input[1]";
 		INDEX = 109;
 		FORMAT = E;
 		SCALE = 1;
@@ -918,7 +918,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_input[6]";
+		SIGNAL = "data11_input[0]";
 		INDEX = 110;
 		FORMAT = E;
 		SCALE = 1;
@@ -926,15 +926,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_input[5]";
+		SIGNAL = "data12_input";
 		INDEX = 111;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_input[4]";
+		SIGNAL = "data12_input[7]";
 		INDEX = 112;
 		FORMAT = E;
 		SCALE = 1;
@@ -942,7 +942,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_input[3]";
+		SIGNAL = "data12_input[6]";
 		INDEX = 113;
 		FORMAT = E;
 		SCALE = 1;
@@ -950,7 +950,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_input[2]";
+		SIGNAL = "data12_input[5]";
 		INDEX = 114;
 		FORMAT = E;
 		SCALE = 1;
@@ -958,7 +958,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_input[1]";
+		SIGNAL = "data12_input[4]";
 		INDEX = 115;
 		FORMAT = E;
 		SCALE = 1;
@@ -966,7 +966,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_input[0]";
+		SIGNAL = "data12_input[3]";
 		INDEX = 116;
 		FORMAT = E;
 		SCALE = 1;
@@ -974,15 +974,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_input";
+		SIGNAL = "data12_input[2]";
 		INDEX = 117;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_input[7]";
+		SIGNAL = "data12_input[1]";
 		INDEX = 118;
 		FORMAT = E;
 		SCALE = 1;
@@ -990,7 +990,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_input[6]";
+		SIGNAL = "data12_input[0]";
 		INDEX = 119;
 		FORMAT = E;
 		SCALE = 1;
@@ -998,15 +998,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_input[5]";
+		SIGNAL = "data13_input";
 		INDEX = 120;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_input[4]";
+		SIGNAL = "data13_input[7]";
 		INDEX = 121;
 		FORMAT = E;
 		SCALE = 1;
@@ -1014,7 +1014,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_input[3]";
+		SIGNAL = "data13_input[6]";
 		INDEX = 122;
 		FORMAT = E;
 		SCALE = 1;
@@ -1022,7 +1022,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_input[2]";
+		SIGNAL = "data13_input[5]";
 		INDEX = 123;
 		FORMAT = E;
 		SCALE = 1;
@@ -1030,7 +1030,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_input[1]";
+		SIGNAL = "data13_input[4]";
 		INDEX = 124;
 		FORMAT = E;
 		SCALE = 1;
@@ -1038,7 +1038,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_input[0]";
+		SIGNAL = "data13_input[3]";
 		INDEX = 125;
 		FORMAT = E;
 		SCALE = 1;
@@ -1046,15 +1046,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_input";
+		SIGNAL = "data13_input[2]";
 		INDEX = 126;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_input[7]";
+		SIGNAL = "data13_input[1]";
 		INDEX = 127;
 		FORMAT = E;
 		SCALE = 1;
@@ -1062,7 +1062,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_input[6]";
+		SIGNAL = "data13_input[0]";
 		INDEX = 128;
 		FORMAT = E;
 		SCALE = 1;
@@ -1070,15 +1070,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_input[5]";
+		SIGNAL = "data14_input";
 		INDEX = 129;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_input[4]";
+		SIGNAL = "data14_input[7]";
 		INDEX = 130;
 		FORMAT = E;
 		SCALE = 1;
@@ -1086,7 +1086,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_input[3]";
+		SIGNAL = "data14_input[6]";
 		INDEX = 131;
 		FORMAT = E;
 		SCALE = 1;
@@ -1094,7 +1094,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_input[2]";
+		SIGNAL = "data14_input[5]";
 		INDEX = 132;
 		FORMAT = E;
 		SCALE = 1;
@@ -1102,7 +1102,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_input[1]";
+		SIGNAL = "data14_input[4]";
 		INDEX = 133;
 		FORMAT = E;
 		SCALE = 1;
@@ -1110,7 +1110,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_input[0]";
+		SIGNAL = "data14_input[3]";
 		INDEX = 134;
 		FORMAT = E;
 		SCALE = 1;
@@ -1118,15 +1118,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_input";
+		SIGNAL = "data14_input[2]";
 		INDEX = 135;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_input[7]";
+		SIGNAL = "data14_input[1]";
 		INDEX = 136;
 		FORMAT = E;
 		SCALE = 1;
@@ -1134,7 +1134,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_input[6]";
+		SIGNAL = "data14_input[0]";
 		INDEX = 137;
 		FORMAT = E;
 		SCALE = 1;
@@ -1142,15 +1142,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_input[5]";
+		SIGNAL = "data15_input";
 		INDEX = 138;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_input[4]";
+		SIGNAL = "data15_input[7]";
 		INDEX = 139;
 		FORMAT = E;
 		SCALE = 1;
@@ -1158,7 +1158,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_input[3]";
+		SIGNAL = "data15_input[6]";
 		INDEX = 140;
 		FORMAT = E;
 		SCALE = 1;
@@ -1166,7 +1166,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_input[2]";
+		SIGNAL = "data15_input[5]";
 		INDEX = 141;
 		FORMAT = E;
 		SCALE = 1;
@@ -1174,7 +1174,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_input[1]";
+		SIGNAL = "data15_input[4]";
 		INDEX = 142;
 		FORMAT = E;
 		SCALE = 1;
@@ -1182,7 +1182,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_input[0]";
+		SIGNAL = "data15_input[3]";
 		INDEX = 143;
 		FORMAT = E;
 		SCALE = 1;
@@ -1190,15 +1190,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_output";
+		SIGNAL = "data15_input[2]";
 		INDEX = 144;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_output[7]";
+		SIGNAL = "data15_input[1]";
 		INDEX = 145;
 		FORMAT = E;
 		SCALE = 1;
@@ -1206,7 +1206,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_output[6]";
+		SIGNAL = "data15_input[0]";
 		INDEX = 146;
 		FORMAT = E;
 		SCALE = 1;
@@ -1214,15 +1214,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_output[5]";
+		SIGNAL = "data0_output";
 		INDEX = 147;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_output[4]";
+		SIGNAL = "data0_output[7]";
 		INDEX = 148;
 		FORMAT = E;
 		SCALE = 1;
@@ -1230,7 +1230,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_output[3]";
+		SIGNAL = "data0_output[6]";
 		INDEX = 149;
 		FORMAT = E;
 		SCALE = 1;
@@ -1238,7 +1238,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_output[2]";
+		SIGNAL = "data0_output[5]";
 		INDEX = 150;
 		FORMAT = E;
 		SCALE = 1;
@@ -1246,7 +1246,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_output[1]";
+		SIGNAL = "data0_output[4]";
 		INDEX = 151;
 		FORMAT = E;
 		SCALE = 1;
@@ -1254,7 +1254,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_output[0]";
+		SIGNAL = "data0_output[3]";
 		INDEX = 152;
 		FORMAT = E;
 		SCALE = 1;
@@ -1262,15 +1262,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_output";
+		SIGNAL = "data0_output[2]";
 		INDEX = 153;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_output[7]";
+		SIGNAL = "data0_output[1]";
 		INDEX = 154;
 		FORMAT = E;
 		SCALE = 1;
@@ -1278,7 +1278,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_output[6]";
+		SIGNAL = "data0_output[0]";
 		INDEX = 155;
 		FORMAT = E;
 		SCALE = 1;
@@ -1286,15 +1286,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_output[5]";
+		SIGNAL = "data1_output";
 		INDEX = 156;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_output[4]";
+		SIGNAL = "data1_output[7]";
 		INDEX = 157;
 		FORMAT = E;
 		SCALE = 1;
@@ -1302,7 +1302,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_output[3]";
+		SIGNAL = "data1_output[6]";
 		INDEX = 158;
 		FORMAT = E;
 		SCALE = 1;
@@ -1310,7 +1310,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_output[2]";
+		SIGNAL = "data1_output[5]";
 		INDEX = 159;
 		FORMAT = E;
 		SCALE = 1;
@@ -1318,7 +1318,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_output[1]";
+		SIGNAL = "data1_output[4]";
 		INDEX = 160;
 		FORMAT = E;
 		SCALE = 1;
@@ -1326,7 +1326,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_output[0]";
+		SIGNAL = "data1_output[3]";
 		INDEX = 161;
 		FORMAT = E;
 		SCALE = 1;
@@ -1334,15 +1334,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_output";
+		SIGNAL = "data1_output[2]";
 		INDEX = 162;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_output[7]";
+		SIGNAL = "data1_output[1]";
 		INDEX = 163;
 		FORMAT = E;
 		SCALE = 1;
@@ -1350,7 +1350,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_output[6]";
+		SIGNAL = "data1_output[0]";
 		INDEX = 164;
 		FORMAT = E;
 		SCALE = 1;
@@ -1358,15 +1358,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_output[5]";
+		SIGNAL = "data2_output";
 		INDEX = 165;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_output[4]";
+		SIGNAL = "data2_output[7]";
 		INDEX = 166;
 		FORMAT = E;
 		SCALE = 1;
@@ -1374,7 +1374,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_output[3]";
+		SIGNAL = "data2_output[6]";
 		INDEX = 167;
 		FORMAT = E;
 		SCALE = 1;
@@ -1382,7 +1382,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_output[2]";
+		SIGNAL = "data2_output[5]";
 		INDEX = 168;
 		FORMAT = E;
 		SCALE = 1;
@@ -1390,7 +1390,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_output[1]";
+		SIGNAL = "data2_output[4]";
 		INDEX = 169;
 		FORMAT = E;
 		SCALE = 1;
@@ -1398,7 +1398,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_output[0]";
+		SIGNAL = "data2_output[3]";
 		INDEX = 170;
 		FORMAT = E;
 		SCALE = 1;
@@ -1406,15 +1406,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_output";
+		SIGNAL = "data2_output[2]";
 		INDEX = 171;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_output[7]";
+		SIGNAL = "data2_output[1]";
 		INDEX = 172;
 		FORMAT = E;
 		SCALE = 1;
@@ -1422,7 +1422,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_output[6]";
+		SIGNAL = "data2_output[0]";
 		INDEX = 173;
 		FORMAT = E;
 		SCALE = 1;
@@ -1430,15 +1430,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_output[5]";
+		SIGNAL = "data3_output";
 		INDEX = 174;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_output[4]";
+		SIGNAL = "data3_output[7]";
 		INDEX = 175;
 		FORMAT = E;
 		SCALE = 1;
@@ -1446,7 +1446,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_output[3]";
+		SIGNAL = "data3_output[6]";
 		INDEX = 176;
 		FORMAT = E;
 		SCALE = 1;
@@ -1454,7 +1454,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_output[2]";
+		SIGNAL = "data3_output[5]";
 		INDEX = 177;
 		FORMAT = E;
 		SCALE = 1;
@@ -1462,7 +1462,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_output[1]";
+		SIGNAL = "data3_output[4]";
 		INDEX = 178;
 		FORMAT = E;
 		SCALE = 1;
@@ -1470,7 +1470,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_output[0]";
+		SIGNAL = "data3_output[3]";
 		INDEX = 179;
 		FORMAT = E;
 		SCALE = 1;
@@ -1478,15 +1478,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_output";
+		SIGNAL = "data3_output[2]";
 		INDEX = 180;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_output[7]";
+		SIGNAL = "data3_output[1]";
 		INDEX = 181;
 		FORMAT = E;
 		SCALE = 1;
@@ -1494,7 +1494,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_output[6]";
+		SIGNAL = "data3_output[0]";
 		INDEX = 182;
 		FORMAT = E;
 		SCALE = 1;
@@ -1502,15 +1502,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_output[5]";
+		SIGNAL = "data4_output";
 		INDEX = 183;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_output[4]";
+		SIGNAL = "data4_output[7]";
 		INDEX = 184;
 		FORMAT = E;
 		SCALE = 1;
@@ -1518,7 +1518,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_output[3]";
+		SIGNAL = "data4_output[6]";
 		INDEX = 185;
 		FORMAT = E;
 		SCALE = 1;
@@ -1526,7 +1526,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_output[2]";
+		SIGNAL = "data4_output[5]";
 		INDEX = 186;
 		FORMAT = E;
 		SCALE = 1;
@@ -1534,7 +1534,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_output[1]";
+		SIGNAL = "data4_output[4]";
 		INDEX = 187;
 		FORMAT = E;
 		SCALE = 1;
@@ -1542,7 +1542,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_output[0]";
+		SIGNAL = "data4_output[3]";
 		INDEX = 188;
 		FORMAT = E;
 		SCALE = 1;
@@ -1550,15 +1550,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_output";
+		SIGNAL = "data4_output[2]";
 		INDEX = 189;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_output[7]";
+		SIGNAL = "data4_output[1]";
 		INDEX = 190;
 		FORMAT = E;
 		SCALE = 1;
@@ -1566,7 +1566,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_output[6]";
+		SIGNAL = "data4_output[0]";
 		INDEX = 191;
 		FORMAT = E;
 		SCALE = 1;
@@ -1574,15 +1574,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_output[5]";
+		SIGNAL = "data5_output";
 		INDEX = 192;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_output[4]";
+		SIGNAL = "data5_output[7]";
 		INDEX = 193;
 		FORMAT = E;
 		SCALE = 1;
@@ -1590,7 +1590,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_output[3]";
+		SIGNAL = "data5_output[6]";
 		INDEX = 194;
 		FORMAT = E;
 		SCALE = 1;
@@ -1598,7 +1598,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_output[2]";
+		SIGNAL = "data5_output[5]";
 		INDEX = 195;
 		FORMAT = E;
 		SCALE = 1;
@@ -1606,7 +1606,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_output[1]";
+		SIGNAL = "data5_output[4]";
 		INDEX = 196;
 		FORMAT = E;
 		SCALE = 1;
@@ -1614,7 +1614,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_output[0]";
+		SIGNAL = "data5_output[3]";
 		INDEX = 197;
 		FORMAT = E;
 		SCALE = 1;
@@ -1622,15 +1622,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_output";
+		SIGNAL = "data5_output[2]";
 		INDEX = 198;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_output[7]";
+		SIGNAL = "data5_output[1]";
 		INDEX = 199;
 		FORMAT = E;
 		SCALE = 1;
@@ -1638,7 +1638,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_output[6]";
+		SIGNAL = "data5_output[0]";
 		INDEX = 200;
 		FORMAT = E;
 		SCALE = 1;
@@ -1646,15 +1646,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_output[5]";
+		SIGNAL = "data6_output";
 		INDEX = 201;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_output[4]";
+		SIGNAL = "data6_output[7]";
 		INDEX = 202;
 		FORMAT = E;
 		SCALE = 1;
@@ -1662,7 +1662,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_output[3]";
+		SIGNAL = "data6_output[6]";
 		INDEX = 203;
 		FORMAT = E;
 		SCALE = 1;
@@ -1670,7 +1670,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_output[2]";
+		SIGNAL = "data6_output[5]";
 		INDEX = 204;
 		FORMAT = E;
 		SCALE = 1;
@@ -1678,7 +1678,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_output[1]";
+		SIGNAL = "data6_output[4]";
 		INDEX = 205;
 		FORMAT = E;
 		SCALE = 1;
@@ -1686,7 +1686,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_output[0]";
+		SIGNAL = "data6_output[3]";
 		INDEX = 206;
 		FORMAT = E;
 		SCALE = 1;
@@ -1694,15 +1694,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_output";
+		SIGNAL = "data6_output[2]";
 		INDEX = 207;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_output[7]";
+		SIGNAL = "data6_output[1]";
 		INDEX = 208;
 		FORMAT = E;
 		SCALE = 1;
@@ -1710,7 +1710,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_output[6]";
+		SIGNAL = "data6_output[0]";
 		INDEX = 209;
 		FORMAT = E;
 		SCALE = 1;
@@ -1718,15 +1718,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_output[5]";
+		SIGNAL = "data7_output";
 		INDEX = 210;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_output[4]";
+		SIGNAL = "data7_output[7]";
 		INDEX = 211;
 		FORMAT = E;
 		SCALE = 1;
@@ -1734,7 +1734,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_output[3]";
+		SIGNAL = "data7_output[6]";
 		INDEX = 212;
 		FORMAT = E;
 		SCALE = 1;
@@ -1742,7 +1742,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_output[2]";
+		SIGNAL = "data7_output[5]";
 		INDEX = 213;
 		FORMAT = E;
 		SCALE = 1;
@@ -1750,7 +1750,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_output[1]";
+		SIGNAL = "data7_output[4]";
 		INDEX = 214;
 		FORMAT = E;
 		SCALE = 1;
@@ -1758,7 +1758,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_output[0]";
+		SIGNAL = "data7_output[3]";
 		INDEX = 215;
 		FORMAT = E;
 		SCALE = 1;
@@ -1766,15 +1766,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_output";
+		SIGNAL = "data7_output[2]";
 		INDEX = 216;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_output[7]";
+		SIGNAL = "data7_output[1]";
 		INDEX = 217;
 		FORMAT = E;
 		SCALE = 1;
@@ -1782,7 +1782,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_output[6]";
+		SIGNAL = "data7_output[0]";
 		INDEX = 218;
 		FORMAT = E;
 		SCALE = 1;
@@ -1790,15 +1790,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_output[5]";
+		SIGNAL = "data8_output";
 		INDEX = 219;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_output[4]";
+		SIGNAL = "data8_output[7]";
 		INDEX = 220;
 		FORMAT = E;
 		SCALE = 1;
@@ -1806,7 +1806,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_output[3]";
+		SIGNAL = "data8_output[6]";
 		INDEX = 221;
 		FORMAT = E;
 		SCALE = 1;
@@ -1814,7 +1814,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_output[2]";
+		SIGNAL = "data8_output[5]";
 		INDEX = 222;
 		FORMAT = E;
 		SCALE = 1;
@@ -1822,7 +1822,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_output[1]";
+		SIGNAL = "data8_output[4]";
 		INDEX = 223;
 		FORMAT = E;
 		SCALE = 1;
@@ -1830,7 +1830,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_output[0]";
+		SIGNAL = "data8_output[3]";
 		INDEX = 224;
 		FORMAT = E;
 		SCALE = 1;
@@ -1838,15 +1838,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_output";
+		SIGNAL = "data8_output[2]";
 		INDEX = 225;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_output[7]";
+		SIGNAL = "data8_output[1]";
 		INDEX = 226;
 		FORMAT = E;
 		SCALE = 1;
@@ -1854,7 +1854,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_output[6]";
+		SIGNAL = "data8_output[0]";
 		INDEX = 227;
 		FORMAT = E;
 		SCALE = 1;
@@ -1862,15 +1862,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_output[5]";
+		SIGNAL = "data9_output";
 		INDEX = 228;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_output[4]";
+		SIGNAL = "data9_output[7]";
 		INDEX = 229;
 		FORMAT = E;
 		SCALE = 1;
@@ -1878,7 +1878,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_output[3]";
+		SIGNAL = "data9_output[6]";
 		INDEX = 230;
 		FORMAT = E;
 		SCALE = 1;
@@ -1886,7 +1886,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_output[2]";
+		SIGNAL = "data9_output[5]";
 		INDEX = 231;
 		FORMAT = E;
 		SCALE = 1;
@@ -1894,7 +1894,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_output[1]";
+		SIGNAL = "data9_output[4]";
 		INDEX = 232;
 		FORMAT = E;
 		SCALE = 1;
@@ -1902,7 +1902,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_output[0]";
+		SIGNAL = "data9_output[3]";
 		INDEX = 233;
 		FORMAT = E;
 		SCALE = 1;
@@ -1910,15 +1910,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_output";
+		SIGNAL = "data9_output[2]";
 		INDEX = 234;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_output[7]";
+		SIGNAL = "data9_output[1]";
 		INDEX = 235;
 		FORMAT = E;
 		SCALE = 1;
@@ -1926,7 +1926,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_output[6]";
+		SIGNAL = "data9_output[0]";
 		INDEX = 236;
 		FORMAT = E;
 		SCALE = 1;
@@ -1934,15 +1934,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_output[5]";
+		SIGNAL = "data10_output";
 		INDEX = 237;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_output[4]";
+		SIGNAL = "data10_output[7]";
 		INDEX = 238;
 		FORMAT = E;
 		SCALE = 1;
@@ -1950,7 +1950,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_output[3]";
+		SIGNAL = "data10_output[6]";
 		INDEX = 239;
 		FORMAT = E;
 		SCALE = 1;
@@ -1958,7 +1958,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_output[2]";
+		SIGNAL = "data10_output[5]";
 		INDEX = 240;
 		FORMAT = E;
 		SCALE = 1;
@@ -1966,7 +1966,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_output[1]";
+		SIGNAL = "data10_output[4]";
 		INDEX = 241;
 		FORMAT = E;
 		SCALE = 1;
@@ -1974,7 +1974,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_output[0]";
+		SIGNAL = "data10_output[3]";
 		INDEX = 242;
 		FORMAT = E;
 		SCALE = 1;
@@ -1982,15 +1982,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_output";
+		SIGNAL = "data10_output[2]";
 		INDEX = 243;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_output[7]";
+		SIGNAL = "data10_output[1]";
 		INDEX = 244;
 		FORMAT = E;
 		SCALE = 1;
@@ -1998,7 +1998,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_output[6]";
+		SIGNAL = "data10_output[0]";
 		INDEX = 245;
 		FORMAT = E;
 		SCALE = 1;
@@ -2006,15 +2006,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_output[5]";
+		SIGNAL = "data11_output";
 		INDEX = 246;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_output[4]";
+		SIGNAL = "data11_output[7]";
 		INDEX = 247;
 		FORMAT = E;
 		SCALE = 1;
@@ -2022,7 +2022,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_output[3]";
+		SIGNAL = "data11_output[6]";
 		INDEX = 248;
 		FORMAT = E;
 		SCALE = 1;
@@ -2030,7 +2030,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_output[2]";
+		SIGNAL = "data11_output[5]";
 		INDEX = 249;
 		FORMAT = E;
 		SCALE = 1;
@@ -2038,7 +2038,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_output[1]";
+		SIGNAL = "data11_output[4]";
 		INDEX = 250;
 		FORMAT = E;
 		SCALE = 1;
@@ -2046,7 +2046,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_output[0]";
+		SIGNAL = "data11_output[3]";
 		INDEX = 251;
 		FORMAT = E;
 		SCALE = 1;
@@ -2054,15 +2054,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_output";
+		SIGNAL = "data11_output[2]";
 		INDEX = 252;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_output[7]";
+		SIGNAL = "data11_output[1]";
 		INDEX = 253;
 		FORMAT = E;
 		SCALE = 1;
@@ -2070,7 +2070,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_output[6]";
+		SIGNAL = "data11_output[0]";
 		INDEX = 254;
 		FORMAT = E;
 		SCALE = 1;
@@ -2078,15 +2078,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_output[5]";
+		SIGNAL = "data12_output";
 		INDEX = 255;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_output[4]";
+		SIGNAL = "data12_output[7]";
 		INDEX = 256;
 		FORMAT = E;
 		SCALE = 1;
@@ -2094,7 +2094,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_output[3]";
+		SIGNAL = "data12_output[6]";
 		INDEX = 257;
 		FORMAT = E;
 		SCALE = 1;
@@ -2102,7 +2102,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_output[2]";
+		SIGNAL = "data12_output[5]";
 		INDEX = 258;
 		FORMAT = E;
 		SCALE = 1;
@@ -2110,7 +2110,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_output[1]";
+		SIGNAL = "data12_output[4]";
 		INDEX = 259;
 		FORMAT = E;
 		SCALE = 1;
@@ -2118,7 +2118,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_output[0]";
+		SIGNAL = "data12_output[3]";
 		INDEX = 260;
 		FORMAT = E;
 		SCALE = 1;
@@ -2126,15 +2126,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_output";
+		SIGNAL = "data12_output[2]";
 		INDEX = 261;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_output[7]";
+		SIGNAL = "data12_output[1]";
 		INDEX = 262;
 		FORMAT = E;
 		SCALE = 1;
@@ -2142,7 +2142,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_output[6]";
+		SIGNAL = "data12_output[0]";
 		INDEX = 263;
 		FORMAT = E;
 		SCALE = 1;
@@ -2150,15 +2150,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_output[5]";
+		SIGNAL = "data13_output";
 		INDEX = 264;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_output[4]";
+		SIGNAL = "data13_output[7]";
 		INDEX = 265;
 		FORMAT = E;
 		SCALE = 1;
@@ -2166,7 +2166,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_output[3]";
+		SIGNAL = "data13_output[6]";
 		INDEX = 266;
 		FORMAT = E;
 		SCALE = 1;
@@ -2174,7 +2174,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_output[2]";
+		SIGNAL = "data13_output[5]";
 		INDEX = 267;
 		FORMAT = E;
 		SCALE = 1;
@@ -2182,7 +2182,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_output[1]";
+		SIGNAL = "data13_output[4]";
 		INDEX = 268;
 		FORMAT = E;
 		SCALE = 1;
@@ -2190,7 +2190,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_output[0]";
+		SIGNAL = "data13_output[3]";
 		INDEX = 269;
 		FORMAT = E;
 		SCALE = 1;
@@ -2198,15 +2198,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_output";
+		SIGNAL = "data13_output[2]";
 		INDEX = 270;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_output[7]";
+		SIGNAL = "data13_output[1]";
 		INDEX = 271;
 		FORMAT = E;
 		SCALE = 1;
@@ -2214,7 +2214,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_output[6]";
+		SIGNAL = "data13_output[0]";
 		INDEX = 272;
 		FORMAT = E;
 		SCALE = 1;
@@ -2222,15 +2222,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_output[5]";
+		SIGNAL = "data14_output";
 		INDEX = 273;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_output[4]";
+		SIGNAL = "data14_output[7]";
 		INDEX = 274;
 		FORMAT = E;
 		SCALE = 1;
@@ -2238,7 +2238,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_output[3]";
+		SIGNAL = "data14_output[6]";
 		INDEX = 275;
 		FORMAT = E;
 		SCALE = 1;
@@ -2246,7 +2246,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_output[2]";
+		SIGNAL = "data14_output[5]";
 		INDEX = 276;
 		FORMAT = E;
 		SCALE = 1;
@@ -2254,7 +2254,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_output[1]";
+		SIGNAL = "data14_output[4]";
 		INDEX = 277;
 		FORMAT = E;
 		SCALE = 1;
@@ -2262,7 +2262,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_output[0]";
+		SIGNAL = "data14_output[3]";
 		INDEX = 278;
 		FORMAT = E;
 		SCALE = 1;
@@ -2270,15 +2270,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_output";
+		SIGNAL = "data14_output[2]";
 		INDEX = 279;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_output[7]";
+		SIGNAL = "data14_output[1]";
 		INDEX = 280;
 		FORMAT = E;
 		SCALE = 1;
@@ -2286,7 +2286,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_output[6]";
+		SIGNAL = "data14_output[0]";
 		INDEX = 281;
 		FORMAT = E;
 		SCALE = 1;
@@ -2294,15 +2294,15 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_output[5]";
+		SIGNAL = "data15_output";
 		INDEX = 282;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_output[4]";
+		SIGNAL = "data15_output[7]";
 		INDEX = 283;
 		FORMAT = E;
 		SCALE = 1;
@@ -2310,7 +2310,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_output[3]";
+		SIGNAL = "data15_output[6]";
 		INDEX = 284;
 		FORMAT = E;
 		SCALE = 1;
@@ -2318,7 +2318,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_output[2]";
+		SIGNAL = "data15_output[5]";
 		INDEX = 285;
 		FORMAT = E;
 		SCALE = 1;
@@ -2326,7 +2326,7 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_output[1]";
+		SIGNAL = "data15_output[4]";
 		INDEX = 286;
 		FORMAT = E;
 		SCALE = 1;
@@ -2334,8 +2334,32 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_output[0]";
+		SIGNAL = "data15_output[3]";
 		INDEX = 287;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "data15_output[2]";
+		INDEX = 288;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "data15_output[1]";
+		INDEX = 289;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "data15_output[0]";
+		INDEX = 290;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2346,11 +2370,11 @@ VECTOR("D:/Development/AES/aes_quartus/aes_quartus.vwf")
 VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 {
 	ZOOM{
-		ZBEGIN = 0;
-		ZEND = 100635;
-		NUMERATOR = 892;
-		DENOMINATOR = 100635;
-		TOP_INDEX = 99;
+		ZBEGIN = 2526438;
+		ZEND = 2705624;
+		NUMERATOR = 795;
+		DENOMINATOR = 173090;
+		TOP_INDEX = 30;
 	}
 	CLOCK{
 		PERIOD = 10000;
@@ -2361,15 +2385,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		INTERVAL_TYPE = HALF_GRID;
 	}
 	LINE{
-		SIGNAL = "data0_input";
+		SIGNAL = "clock";
 		INDEX = 0;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_input[7]";
+		SIGNAL = "enable";
 		INDEX = 1;
 		FORMAT = E;
 		SCALE = 1;
@@ -2377,7 +2401,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_input[6]";
+		SIGNAL = "on_ready";
 		INDEX = 2;
 		FORMAT = E;
 		SCALE = 1;
@@ -2385,15 +2409,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_input[5]";
+		SIGNAL = "data0_input";
 		INDEX = 3;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_input[4]";
+		SIGNAL = "data0_input[7]";
 		INDEX = 4;
 		FORMAT = E;
 		SCALE = 1;
@@ -2401,7 +2425,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_input[3]";
+		SIGNAL = "data0_input[6]";
 		INDEX = 5;
 		FORMAT = E;
 		SCALE = 1;
@@ -2409,7 +2433,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_input[2]";
+		SIGNAL = "data0_input[5]";
 		INDEX = 6;
 		FORMAT = E;
 		SCALE = 1;
@@ -2417,7 +2441,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_input[1]";
+		SIGNAL = "data0_input[4]";
 		INDEX = 7;
 		FORMAT = E;
 		SCALE = 1;
@@ -2425,7 +2449,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_input[0]";
+		SIGNAL = "data0_input[3]";
 		INDEX = 8;
 		FORMAT = E;
 		SCALE = 1;
@@ -2433,15 +2457,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_input";
+		SIGNAL = "data0_input[2]";
 		INDEX = 9;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_input[7]";
+		SIGNAL = "data0_input[1]";
 		INDEX = 10;
 		FORMAT = E;
 		SCALE = 1;
@@ -2449,7 +2473,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_input[6]";
+		SIGNAL = "data0_input[0]";
 		INDEX = 11;
 		FORMAT = E;
 		SCALE = 1;
@@ -2457,15 +2481,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_input[5]";
+		SIGNAL = "data1_input";
 		INDEX = 12;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_input[4]";
+		SIGNAL = "data1_input[7]";
 		INDEX = 13;
 		FORMAT = E;
 		SCALE = 1;
@@ -2473,7 +2497,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_input[3]";
+		SIGNAL = "data1_input[6]";
 		INDEX = 14;
 		FORMAT = E;
 		SCALE = 1;
@@ -2481,7 +2505,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_input[2]";
+		SIGNAL = "data1_input[5]";
 		INDEX = 15;
 		FORMAT = E;
 		SCALE = 1;
@@ -2489,7 +2513,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_input[1]";
+		SIGNAL = "data1_input[4]";
 		INDEX = 16;
 		FORMAT = E;
 		SCALE = 1;
@@ -2497,7 +2521,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_input[0]";
+		SIGNAL = "data1_input[3]";
 		INDEX = 17;
 		FORMAT = E;
 		SCALE = 1;
@@ -2505,15 +2529,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_input";
+		SIGNAL = "data1_input[2]";
 		INDEX = 18;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_input[7]";
+		SIGNAL = "data1_input[1]";
 		INDEX = 19;
 		FORMAT = E;
 		SCALE = 1;
@@ -2521,7 +2545,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_input[6]";
+		SIGNAL = "data1_input[0]";
 		INDEX = 20;
 		FORMAT = E;
 		SCALE = 1;
@@ -2529,15 +2553,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_input[5]";
+		SIGNAL = "data2_input";
 		INDEX = 21;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_input[4]";
+		SIGNAL = "data2_input[7]";
 		INDEX = 22;
 		FORMAT = E;
 		SCALE = 1;
@@ -2545,7 +2569,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_input[3]";
+		SIGNAL = "data2_input[6]";
 		INDEX = 23;
 		FORMAT = E;
 		SCALE = 1;
@@ -2553,7 +2577,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_input[2]";
+		SIGNAL = "data2_input[5]";
 		INDEX = 24;
 		FORMAT = E;
 		SCALE = 1;
@@ -2561,7 +2585,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_input[1]";
+		SIGNAL = "data2_input[4]";
 		INDEX = 25;
 		FORMAT = E;
 		SCALE = 1;
@@ -2569,7 +2593,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_input[0]";
+		SIGNAL = "data2_input[3]";
 		INDEX = 26;
 		FORMAT = E;
 		SCALE = 1;
@@ -2577,15 +2601,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_input";
+		SIGNAL = "data2_input[2]";
 		INDEX = 27;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_input[7]";
+		SIGNAL = "data2_input[1]";
 		INDEX = 28;
 		FORMAT = E;
 		SCALE = 1;
@@ -2593,7 +2617,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_input[6]";
+		SIGNAL = "data2_input[0]";
 		INDEX = 29;
 		FORMAT = E;
 		SCALE = 1;
@@ -2601,15 +2625,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_input[5]";
+		SIGNAL = "data3_input";
 		INDEX = 30;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_input[4]";
+		SIGNAL = "data3_input[7]";
 		INDEX = 31;
 		FORMAT = E;
 		SCALE = 1;
@@ -2617,7 +2641,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_input[3]";
+		SIGNAL = "data3_input[6]";
 		INDEX = 32;
 		FORMAT = E;
 		SCALE = 1;
@@ -2625,7 +2649,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_input[2]";
+		SIGNAL = "data3_input[5]";
 		INDEX = 33;
 		FORMAT = E;
 		SCALE = 1;
@@ -2633,7 +2657,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_input[1]";
+		SIGNAL = "data3_input[4]";
 		INDEX = 34;
 		FORMAT = E;
 		SCALE = 1;
@@ -2641,7 +2665,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_input[0]";
+		SIGNAL = "data3_input[3]";
 		INDEX = 35;
 		FORMAT = E;
 		SCALE = 1;
@@ -2649,15 +2673,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_input";
+		SIGNAL = "data3_input[2]";
 		INDEX = 36;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_input[7]";
+		SIGNAL = "data3_input[1]";
 		INDEX = 37;
 		FORMAT = E;
 		SCALE = 1;
@@ -2665,7 +2689,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_input[6]";
+		SIGNAL = "data3_input[0]";
 		INDEX = 38;
 		FORMAT = E;
 		SCALE = 1;
@@ -2673,15 +2697,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_input[5]";
+		SIGNAL = "data4_input";
 		INDEX = 39;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_input[4]";
+		SIGNAL = "data4_input[7]";
 		INDEX = 40;
 		FORMAT = E;
 		SCALE = 1;
@@ -2689,7 +2713,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_input[3]";
+		SIGNAL = "data4_input[6]";
 		INDEX = 41;
 		FORMAT = E;
 		SCALE = 1;
@@ -2697,7 +2721,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_input[2]";
+		SIGNAL = "data4_input[5]";
 		INDEX = 42;
 		FORMAT = E;
 		SCALE = 1;
@@ -2705,7 +2729,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_input[1]";
+		SIGNAL = "data4_input[4]";
 		INDEX = 43;
 		FORMAT = E;
 		SCALE = 1;
@@ -2713,7 +2737,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_input[0]";
+		SIGNAL = "data4_input[3]";
 		INDEX = 44;
 		FORMAT = E;
 		SCALE = 1;
@@ -2721,15 +2745,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_input";
+		SIGNAL = "data4_input[2]";
 		INDEX = 45;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_input[7]";
+		SIGNAL = "data4_input[1]";
 		INDEX = 46;
 		FORMAT = E;
 		SCALE = 1;
@@ -2737,7 +2761,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_input[6]";
+		SIGNAL = "data4_input[0]";
 		INDEX = 47;
 		FORMAT = E;
 		SCALE = 1;
@@ -2745,15 +2769,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_input[5]";
+		SIGNAL = "data5_input";
 		INDEX = 48;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_input[4]";
+		SIGNAL = "data5_input[7]";
 		INDEX = 49;
 		FORMAT = E;
 		SCALE = 1;
@@ -2761,7 +2785,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_input[3]";
+		SIGNAL = "data5_input[6]";
 		INDEX = 50;
 		FORMAT = E;
 		SCALE = 1;
@@ -2769,7 +2793,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_input[2]";
+		SIGNAL = "data5_input[5]";
 		INDEX = 51;
 		FORMAT = E;
 		SCALE = 1;
@@ -2777,7 +2801,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_input[1]";
+		SIGNAL = "data5_input[4]";
 		INDEX = 52;
 		FORMAT = E;
 		SCALE = 1;
@@ -2785,7 +2809,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_input[0]";
+		SIGNAL = "data5_input[3]";
 		INDEX = 53;
 		FORMAT = E;
 		SCALE = 1;
@@ -2793,15 +2817,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_input";
+		SIGNAL = "data5_input[2]";
 		INDEX = 54;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_input[7]";
+		SIGNAL = "data5_input[1]";
 		INDEX = 55;
 		FORMAT = E;
 		SCALE = 1;
@@ -2809,7 +2833,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_input[6]";
+		SIGNAL = "data5_input[0]";
 		INDEX = 56;
 		FORMAT = E;
 		SCALE = 1;
@@ -2817,15 +2841,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_input[5]";
+		SIGNAL = "data6_input";
 		INDEX = 57;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_input[4]";
+		SIGNAL = "data6_input[7]";
 		INDEX = 58;
 		FORMAT = E;
 		SCALE = 1;
@@ -2833,7 +2857,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_input[3]";
+		SIGNAL = "data6_input[6]";
 		INDEX = 59;
 		FORMAT = E;
 		SCALE = 1;
@@ -2841,7 +2865,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_input[2]";
+		SIGNAL = "data6_input[5]";
 		INDEX = 60;
 		FORMAT = E;
 		SCALE = 1;
@@ -2849,7 +2873,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_input[1]";
+		SIGNAL = "data6_input[4]";
 		INDEX = 61;
 		FORMAT = E;
 		SCALE = 1;
@@ -2857,7 +2881,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_input[0]";
+		SIGNAL = "data6_input[3]";
 		INDEX = 62;
 		FORMAT = E;
 		SCALE = 1;
@@ -2865,15 +2889,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_input";
+		SIGNAL = "data6_input[2]";
 		INDEX = 63;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_input[7]";
+		SIGNAL = "data6_input[1]";
 		INDEX = 64;
 		FORMAT = E;
 		SCALE = 1;
@@ -2881,7 +2905,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_input[6]";
+		SIGNAL = "data6_input[0]";
 		INDEX = 65;
 		FORMAT = E;
 		SCALE = 1;
@@ -2889,15 +2913,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_input[5]";
+		SIGNAL = "data7_input";
 		INDEX = 66;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_input[4]";
+		SIGNAL = "data7_input[7]";
 		INDEX = 67;
 		FORMAT = E;
 		SCALE = 1;
@@ -2905,7 +2929,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_input[3]";
+		SIGNAL = "data7_input[6]";
 		INDEX = 68;
 		FORMAT = E;
 		SCALE = 1;
@@ -2913,7 +2937,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_input[2]";
+		SIGNAL = "data7_input[5]";
 		INDEX = 69;
 		FORMAT = E;
 		SCALE = 1;
@@ -2921,7 +2945,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_input[1]";
+		SIGNAL = "data7_input[4]";
 		INDEX = 70;
 		FORMAT = E;
 		SCALE = 1;
@@ -2929,7 +2953,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_input[0]";
+		SIGNAL = "data7_input[3]";
 		INDEX = 71;
 		FORMAT = E;
 		SCALE = 1;
@@ -2937,15 +2961,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_input";
+		SIGNAL = "data7_input[2]";
 		INDEX = 72;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_input[7]";
+		SIGNAL = "data7_input[1]";
 		INDEX = 73;
 		FORMAT = E;
 		SCALE = 1;
@@ -2953,7 +2977,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_input[6]";
+		SIGNAL = "data7_input[0]";
 		INDEX = 74;
 		FORMAT = E;
 		SCALE = 1;
@@ -2961,15 +2985,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_input[5]";
+		SIGNAL = "data8_input";
 		INDEX = 75;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_input[4]";
+		SIGNAL = "data8_input[7]";
 		INDEX = 76;
 		FORMAT = E;
 		SCALE = 1;
@@ -2977,7 +3001,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_input[3]";
+		SIGNAL = "data8_input[6]";
 		INDEX = 77;
 		FORMAT = E;
 		SCALE = 1;
@@ -2985,7 +3009,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_input[2]";
+		SIGNAL = "data8_input[5]";
 		INDEX = 78;
 		FORMAT = E;
 		SCALE = 1;
@@ -2993,7 +3017,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_input[1]";
+		SIGNAL = "data8_input[4]";
 		INDEX = 79;
 		FORMAT = E;
 		SCALE = 1;
@@ -3001,7 +3025,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_input[0]";
+		SIGNAL = "data8_input[3]";
 		INDEX = 80;
 		FORMAT = E;
 		SCALE = 1;
@@ -3009,15 +3033,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_input";
+		SIGNAL = "data8_input[2]";
 		INDEX = 81;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_input[7]";
+		SIGNAL = "data8_input[1]";
 		INDEX = 82;
 		FORMAT = E;
 		SCALE = 1;
@@ -3025,7 +3049,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_input[6]";
+		SIGNAL = "data8_input[0]";
 		INDEX = 83;
 		FORMAT = E;
 		SCALE = 1;
@@ -3033,15 +3057,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_input[5]";
+		SIGNAL = "data9_input";
 		INDEX = 84;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_input[4]";
+		SIGNAL = "data9_input[7]";
 		INDEX = 85;
 		FORMAT = E;
 		SCALE = 1;
@@ -3049,7 +3073,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_input[3]";
+		SIGNAL = "data9_input[6]";
 		INDEX = 86;
 		FORMAT = E;
 		SCALE = 1;
@@ -3057,7 +3081,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_input[2]";
+		SIGNAL = "data9_input[5]";
 		INDEX = 87;
 		FORMAT = E;
 		SCALE = 1;
@@ -3065,7 +3089,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_input[1]";
+		SIGNAL = "data9_input[4]";
 		INDEX = 88;
 		FORMAT = E;
 		SCALE = 1;
@@ -3073,7 +3097,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_input[0]";
+		SIGNAL = "data9_input[3]";
 		INDEX = 89;
 		FORMAT = E;
 		SCALE = 1;
@@ -3081,15 +3105,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_input";
+		SIGNAL = "data9_input[2]";
 		INDEX = 90;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_input[7]";
+		SIGNAL = "data9_input[1]";
 		INDEX = 91;
 		FORMAT = E;
 		SCALE = 1;
@@ -3097,7 +3121,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_input[6]";
+		SIGNAL = "data9_input[0]";
 		INDEX = 92;
 		FORMAT = E;
 		SCALE = 1;
@@ -3105,15 +3129,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_input[5]";
+		SIGNAL = "data10_input";
 		INDEX = 93;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_input[4]";
+		SIGNAL = "data10_input[7]";
 		INDEX = 94;
 		FORMAT = E;
 		SCALE = 1;
@@ -3121,7 +3145,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_input[3]";
+		SIGNAL = "data10_input[6]";
 		INDEX = 95;
 		FORMAT = E;
 		SCALE = 1;
@@ -3129,7 +3153,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_input[2]";
+		SIGNAL = "data10_input[5]";
 		INDEX = 96;
 		FORMAT = E;
 		SCALE = 1;
@@ -3137,7 +3161,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_input[1]";
+		SIGNAL = "data10_input[4]";
 		INDEX = 97;
 		FORMAT = E;
 		SCALE = 1;
@@ -3145,7 +3169,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_input[0]";
+		SIGNAL = "data10_input[3]";
 		INDEX = 98;
 		FORMAT = E;
 		SCALE = 1;
@@ -3153,15 +3177,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_input";
+		SIGNAL = "data10_input[2]";
 		INDEX = 99;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_input[7]";
+		SIGNAL = "data10_input[1]";
 		INDEX = 100;
 		FORMAT = E;
 		SCALE = 1;
@@ -3169,7 +3193,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_input[6]";
+		SIGNAL = "data10_input[0]";
 		INDEX = 101;
 		FORMAT = E;
 		SCALE = 1;
@@ -3177,15 +3201,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_input[5]";
+		SIGNAL = "data11_input";
 		INDEX = 102;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_input[4]";
+		SIGNAL = "data11_input[7]";
 		INDEX = 103;
 		FORMAT = E;
 		SCALE = 1;
@@ -3193,7 +3217,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_input[3]";
+		SIGNAL = "data11_input[6]";
 		INDEX = 104;
 		FORMAT = E;
 		SCALE = 1;
@@ -3201,7 +3225,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_input[2]";
+		SIGNAL = "data11_input[5]";
 		INDEX = 105;
 		FORMAT = E;
 		SCALE = 1;
@@ -3209,7 +3233,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_input[1]";
+		SIGNAL = "data11_input[4]";
 		INDEX = 106;
 		FORMAT = E;
 		SCALE = 1;
@@ -3217,7 +3241,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_input[0]";
+		SIGNAL = "data11_input[3]";
 		INDEX = 107;
 		FORMAT = E;
 		SCALE = 1;
@@ -3225,15 +3249,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_input";
+		SIGNAL = "data11_input[2]";
 		INDEX = 108;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_input[7]";
+		SIGNAL = "data11_input[1]";
 		INDEX = 109;
 		FORMAT = E;
 		SCALE = 1;
@@ -3241,7 +3265,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_input[6]";
+		SIGNAL = "data11_input[0]";
 		INDEX = 110;
 		FORMAT = E;
 		SCALE = 1;
@@ -3249,15 +3273,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_input[5]";
+		SIGNAL = "data12_input";
 		INDEX = 111;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_input[4]";
+		SIGNAL = "data12_input[7]";
 		INDEX = 112;
 		FORMAT = E;
 		SCALE = 1;
@@ -3265,7 +3289,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_input[3]";
+		SIGNAL = "data12_input[6]";
 		INDEX = 113;
 		FORMAT = E;
 		SCALE = 1;
@@ -3273,7 +3297,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_input[2]";
+		SIGNAL = "data12_input[5]";
 		INDEX = 114;
 		FORMAT = E;
 		SCALE = 1;
@@ -3281,7 +3305,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_input[1]";
+		SIGNAL = "data12_input[4]";
 		INDEX = 115;
 		FORMAT = E;
 		SCALE = 1;
@@ -3289,7 +3313,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_input[0]";
+		SIGNAL = "data12_input[3]";
 		INDEX = 116;
 		FORMAT = E;
 		SCALE = 1;
@@ -3297,15 +3321,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_input";
+		SIGNAL = "data12_input[2]";
 		INDEX = 117;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_input[7]";
+		SIGNAL = "data12_input[1]";
 		INDEX = 118;
 		FORMAT = E;
 		SCALE = 1;
@@ -3313,7 +3337,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_input[6]";
+		SIGNAL = "data12_input[0]";
 		INDEX = 119;
 		FORMAT = E;
 		SCALE = 1;
@@ -3321,15 +3345,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_input[5]";
+		SIGNAL = "data13_input";
 		INDEX = 120;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_input[4]";
+		SIGNAL = "data13_input[7]";
 		INDEX = 121;
 		FORMAT = E;
 		SCALE = 1;
@@ -3337,7 +3361,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_input[3]";
+		SIGNAL = "data13_input[6]";
 		INDEX = 122;
 		FORMAT = E;
 		SCALE = 1;
@@ -3345,7 +3369,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_input[2]";
+		SIGNAL = "data13_input[5]";
 		INDEX = 123;
 		FORMAT = E;
 		SCALE = 1;
@@ -3353,7 +3377,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_input[1]";
+		SIGNAL = "data13_input[4]";
 		INDEX = 124;
 		FORMAT = E;
 		SCALE = 1;
@@ -3361,7 +3385,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_input[0]";
+		SIGNAL = "data13_input[3]";
 		INDEX = 125;
 		FORMAT = E;
 		SCALE = 1;
@@ -3369,15 +3393,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_input";
+		SIGNAL = "data13_input[2]";
 		INDEX = 126;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_input[7]";
+		SIGNAL = "data13_input[1]";
 		INDEX = 127;
 		FORMAT = E;
 		SCALE = 1;
@@ -3385,7 +3409,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_input[6]";
+		SIGNAL = "data13_input[0]";
 		INDEX = 128;
 		FORMAT = E;
 		SCALE = 1;
@@ -3393,15 +3417,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_input[5]";
+		SIGNAL = "data14_input";
 		INDEX = 129;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_input[4]";
+		SIGNAL = "data14_input[7]";
 		INDEX = 130;
 		FORMAT = E;
 		SCALE = 1;
@@ -3409,7 +3433,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_input[3]";
+		SIGNAL = "data14_input[6]";
 		INDEX = 131;
 		FORMAT = E;
 		SCALE = 1;
@@ -3417,7 +3441,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_input[2]";
+		SIGNAL = "data14_input[5]";
 		INDEX = 132;
 		FORMAT = E;
 		SCALE = 1;
@@ -3425,7 +3449,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_input[1]";
+		SIGNAL = "data14_input[4]";
 		INDEX = 133;
 		FORMAT = E;
 		SCALE = 1;
@@ -3433,7 +3457,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_input[0]";
+		SIGNAL = "data14_input[3]";
 		INDEX = 134;
 		FORMAT = E;
 		SCALE = 1;
@@ -3441,15 +3465,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_input";
+		SIGNAL = "data14_input[2]";
 		INDEX = 135;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_input[7]";
+		SIGNAL = "data14_input[1]";
 		INDEX = 136;
 		FORMAT = E;
 		SCALE = 1;
@@ -3457,7 +3481,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_input[6]";
+		SIGNAL = "data14_input[0]";
 		INDEX = 137;
 		FORMAT = E;
 		SCALE = 1;
@@ -3465,15 +3489,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_input[5]";
+		SIGNAL = "data15_input";
 		INDEX = 138;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_input[4]";
+		SIGNAL = "data15_input[7]";
 		INDEX = 139;
 		FORMAT = E;
 		SCALE = 1;
@@ -3481,7 +3505,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_input[3]";
+		SIGNAL = "data15_input[6]";
 		INDEX = 140;
 		FORMAT = E;
 		SCALE = 1;
@@ -3489,7 +3513,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_input[2]";
+		SIGNAL = "data15_input[5]";
 		INDEX = 141;
 		FORMAT = E;
 		SCALE = 1;
@@ -3497,7 +3521,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_input[1]";
+		SIGNAL = "data15_input[4]";
 		INDEX = 142;
 		FORMAT = E;
 		SCALE = 1;
@@ -3505,7 +3529,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_input[0]";
+		SIGNAL = "data15_input[3]";
 		INDEX = 143;
 		FORMAT = E;
 		SCALE = 1;
@@ -3513,15 +3537,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_output";
+		SIGNAL = "data15_input[2]";
 		INDEX = 144;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_output[7]";
+		SIGNAL = "data15_input[1]";
 		INDEX = 145;
 		FORMAT = E;
 		SCALE = 1;
@@ -3529,7 +3553,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_output[6]";
+		SIGNAL = "data15_input[0]";
 		INDEX = 146;
 		FORMAT = E;
 		SCALE = 1;
@@ -3537,15 +3561,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_output[5]";
+		SIGNAL = "data0_output";
 		INDEX = 147;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_output[4]";
+		SIGNAL = "data0_output[7]";
 		INDEX = 148;
 		FORMAT = E;
 		SCALE = 1;
@@ -3553,7 +3577,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_output[3]";
+		SIGNAL = "data0_output[6]";
 		INDEX = 149;
 		FORMAT = E;
 		SCALE = 1;
@@ -3561,7 +3585,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_output[2]";
+		SIGNAL = "data0_output[5]";
 		INDEX = 150;
 		FORMAT = E;
 		SCALE = 1;
@@ -3569,7 +3593,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_output[1]";
+		SIGNAL = "data0_output[4]";
 		INDEX = 151;
 		FORMAT = E;
 		SCALE = 1;
@@ -3577,7 +3601,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data0_output[0]";
+		SIGNAL = "data0_output[3]";
 		INDEX = 152;
 		FORMAT = E;
 		SCALE = 1;
@@ -3585,15 +3609,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_output";
+		SIGNAL = "data0_output[2]";
 		INDEX = 153;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_output[7]";
+		SIGNAL = "data0_output[1]";
 		INDEX = 154;
 		FORMAT = E;
 		SCALE = 1;
@@ -3601,7 +3625,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_output[6]";
+		SIGNAL = "data0_output[0]";
 		INDEX = 155;
 		FORMAT = E;
 		SCALE = 1;
@@ -3609,15 +3633,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_output[5]";
+		SIGNAL = "data1_output";
 		INDEX = 156;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_output[4]";
+		SIGNAL = "data1_output[7]";
 		INDEX = 157;
 		FORMAT = E;
 		SCALE = 1;
@@ -3625,7 +3649,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_output[3]";
+		SIGNAL = "data1_output[6]";
 		INDEX = 158;
 		FORMAT = E;
 		SCALE = 1;
@@ -3633,7 +3657,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_output[2]";
+		SIGNAL = "data1_output[5]";
 		INDEX = 159;
 		FORMAT = E;
 		SCALE = 1;
@@ -3641,7 +3665,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_output[1]";
+		SIGNAL = "data1_output[4]";
 		INDEX = 160;
 		FORMAT = E;
 		SCALE = 1;
@@ -3649,7 +3673,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data1_output[0]";
+		SIGNAL = "data1_output[3]";
 		INDEX = 161;
 		FORMAT = E;
 		SCALE = 1;
@@ -3657,15 +3681,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_output";
+		SIGNAL = "data1_output[2]";
 		INDEX = 162;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_output[7]";
+		SIGNAL = "data1_output[1]";
 		INDEX = 163;
 		FORMAT = E;
 		SCALE = 1;
@@ -3673,7 +3697,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_output[6]";
+		SIGNAL = "data1_output[0]";
 		INDEX = 164;
 		FORMAT = E;
 		SCALE = 1;
@@ -3681,15 +3705,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_output[5]";
+		SIGNAL = "data2_output";
 		INDEX = 165;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_output[4]";
+		SIGNAL = "data2_output[7]";
 		INDEX = 166;
 		FORMAT = E;
 		SCALE = 1;
@@ -3697,7 +3721,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_output[3]";
+		SIGNAL = "data2_output[6]";
 		INDEX = 167;
 		FORMAT = E;
 		SCALE = 1;
@@ -3705,7 +3729,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_output[2]";
+		SIGNAL = "data2_output[5]";
 		INDEX = 168;
 		FORMAT = E;
 		SCALE = 1;
@@ -3713,7 +3737,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_output[1]";
+		SIGNAL = "data2_output[4]";
 		INDEX = 169;
 		FORMAT = E;
 		SCALE = 1;
@@ -3721,7 +3745,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data2_output[0]";
+		SIGNAL = "data2_output[3]";
 		INDEX = 170;
 		FORMAT = E;
 		SCALE = 1;
@@ -3729,15 +3753,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_output";
+		SIGNAL = "data2_output[2]";
 		INDEX = 171;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_output[7]";
+		SIGNAL = "data2_output[1]";
 		INDEX = 172;
 		FORMAT = E;
 		SCALE = 1;
@@ -3745,7 +3769,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_output[6]";
+		SIGNAL = "data2_output[0]";
 		INDEX = 173;
 		FORMAT = E;
 		SCALE = 1;
@@ -3753,15 +3777,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_output[5]";
+		SIGNAL = "data3_output";
 		INDEX = 174;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_output[4]";
+		SIGNAL = "data3_output[7]";
 		INDEX = 175;
 		FORMAT = E;
 		SCALE = 1;
@@ -3769,7 +3793,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_output[3]";
+		SIGNAL = "data3_output[6]";
 		INDEX = 176;
 		FORMAT = E;
 		SCALE = 1;
@@ -3777,7 +3801,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_output[2]";
+		SIGNAL = "data3_output[5]";
 		INDEX = 177;
 		FORMAT = E;
 		SCALE = 1;
@@ -3785,7 +3809,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_output[1]";
+		SIGNAL = "data3_output[4]";
 		INDEX = 178;
 		FORMAT = E;
 		SCALE = 1;
@@ -3793,7 +3817,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data3_output[0]";
+		SIGNAL = "data3_output[3]";
 		INDEX = 179;
 		FORMAT = E;
 		SCALE = 1;
@@ -3801,15 +3825,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_output";
+		SIGNAL = "data3_output[2]";
 		INDEX = 180;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_output[7]";
+		SIGNAL = "data3_output[1]";
 		INDEX = 181;
 		FORMAT = E;
 		SCALE = 1;
@@ -3817,7 +3841,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_output[6]";
+		SIGNAL = "data3_output[0]";
 		INDEX = 182;
 		FORMAT = E;
 		SCALE = 1;
@@ -3825,15 +3849,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_output[5]";
+		SIGNAL = "data4_output";
 		INDEX = 183;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_output[4]";
+		SIGNAL = "data4_output[7]";
 		INDEX = 184;
 		FORMAT = E;
 		SCALE = 1;
@@ -3841,7 +3865,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_output[3]";
+		SIGNAL = "data4_output[6]";
 		INDEX = 185;
 		FORMAT = E;
 		SCALE = 1;
@@ -3849,7 +3873,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_output[2]";
+		SIGNAL = "data4_output[5]";
 		INDEX = 186;
 		FORMAT = E;
 		SCALE = 1;
@@ -3857,7 +3881,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_output[1]";
+		SIGNAL = "data4_output[4]";
 		INDEX = 187;
 		FORMAT = E;
 		SCALE = 1;
@@ -3865,7 +3889,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data4_output[0]";
+		SIGNAL = "data4_output[3]";
 		INDEX = 188;
 		FORMAT = E;
 		SCALE = 1;
@@ -3873,15 +3897,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_output";
+		SIGNAL = "data4_output[2]";
 		INDEX = 189;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_output[7]";
+		SIGNAL = "data4_output[1]";
 		INDEX = 190;
 		FORMAT = E;
 		SCALE = 1;
@@ -3889,7 +3913,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_output[6]";
+		SIGNAL = "data4_output[0]";
 		INDEX = 191;
 		FORMAT = E;
 		SCALE = 1;
@@ -3897,15 +3921,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_output[5]";
+		SIGNAL = "data5_output";
 		INDEX = 192;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_output[4]";
+		SIGNAL = "data5_output[7]";
 		INDEX = 193;
 		FORMAT = E;
 		SCALE = 1;
@@ -3913,7 +3937,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_output[3]";
+		SIGNAL = "data5_output[6]";
 		INDEX = 194;
 		FORMAT = E;
 		SCALE = 1;
@@ -3921,7 +3945,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_output[2]";
+		SIGNAL = "data5_output[5]";
 		INDEX = 195;
 		FORMAT = E;
 		SCALE = 1;
@@ -3929,7 +3953,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_output[1]";
+		SIGNAL = "data5_output[4]";
 		INDEX = 196;
 		FORMAT = E;
 		SCALE = 1;
@@ -3937,7 +3961,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data5_output[0]";
+		SIGNAL = "data5_output[3]";
 		INDEX = 197;
 		FORMAT = E;
 		SCALE = 1;
@@ -3945,15 +3969,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_output";
+		SIGNAL = "data5_output[2]";
 		INDEX = 198;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_output[7]";
+		SIGNAL = "data5_output[1]";
 		INDEX = 199;
 		FORMAT = E;
 		SCALE = 1;
@@ -3961,7 +3985,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_output[6]";
+		SIGNAL = "data5_output[0]";
 		INDEX = 200;
 		FORMAT = E;
 		SCALE = 1;
@@ -3969,15 +3993,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_output[5]";
+		SIGNAL = "data6_output";
 		INDEX = 201;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_output[4]";
+		SIGNAL = "data6_output[7]";
 		INDEX = 202;
 		FORMAT = E;
 		SCALE = 1;
@@ -3985,7 +4009,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_output[3]";
+		SIGNAL = "data6_output[6]";
 		INDEX = 203;
 		FORMAT = E;
 		SCALE = 1;
@@ -3993,7 +4017,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_output[2]";
+		SIGNAL = "data6_output[5]";
 		INDEX = 204;
 		FORMAT = E;
 		SCALE = 1;
@@ -4001,7 +4025,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_output[1]";
+		SIGNAL = "data6_output[4]";
 		INDEX = 205;
 		FORMAT = E;
 		SCALE = 1;
@@ -4009,7 +4033,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data6_output[0]";
+		SIGNAL = "data6_output[3]";
 		INDEX = 206;
 		FORMAT = E;
 		SCALE = 1;
@@ -4017,15 +4041,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_output";
+		SIGNAL = "data6_output[2]";
 		INDEX = 207;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_output[7]";
+		SIGNAL = "data6_output[1]";
 		INDEX = 208;
 		FORMAT = E;
 		SCALE = 1;
@@ -4033,7 +4057,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_output[6]";
+		SIGNAL = "data6_output[0]";
 		INDEX = 209;
 		FORMAT = E;
 		SCALE = 1;
@@ -4041,15 +4065,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_output[5]";
+		SIGNAL = "data7_output";
 		INDEX = 210;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_output[4]";
+		SIGNAL = "data7_output[7]";
 		INDEX = 211;
 		FORMAT = E;
 		SCALE = 1;
@@ -4057,7 +4081,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_output[3]";
+		SIGNAL = "data7_output[6]";
 		INDEX = 212;
 		FORMAT = E;
 		SCALE = 1;
@@ -4065,7 +4089,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_output[2]";
+		SIGNAL = "data7_output[5]";
 		INDEX = 213;
 		FORMAT = E;
 		SCALE = 1;
@@ -4073,7 +4097,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_output[1]";
+		SIGNAL = "data7_output[4]";
 		INDEX = 214;
 		FORMAT = E;
 		SCALE = 1;
@@ -4081,7 +4105,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data7_output[0]";
+		SIGNAL = "data7_output[3]";
 		INDEX = 215;
 		FORMAT = E;
 		SCALE = 1;
@@ -4089,15 +4113,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_output";
+		SIGNAL = "data7_output[2]";
 		INDEX = 216;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_output[7]";
+		SIGNAL = "data7_output[1]";
 		INDEX = 217;
 		FORMAT = E;
 		SCALE = 1;
@@ -4105,7 +4129,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_output[6]";
+		SIGNAL = "data7_output[0]";
 		INDEX = 218;
 		FORMAT = E;
 		SCALE = 1;
@@ -4113,15 +4137,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_output[5]";
+		SIGNAL = "data8_output";
 		INDEX = 219;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_output[4]";
+		SIGNAL = "data8_output[7]";
 		INDEX = 220;
 		FORMAT = E;
 		SCALE = 1;
@@ -4129,7 +4153,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_output[3]";
+		SIGNAL = "data8_output[6]";
 		INDEX = 221;
 		FORMAT = E;
 		SCALE = 1;
@@ -4137,7 +4161,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_output[2]";
+		SIGNAL = "data8_output[5]";
 		INDEX = 222;
 		FORMAT = E;
 		SCALE = 1;
@@ -4145,7 +4169,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_output[1]";
+		SIGNAL = "data8_output[4]";
 		INDEX = 223;
 		FORMAT = E;
 		SCALE = 1;
@@ -4153,7 +4177,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data8_output[0]";
+		SIGNAL = "data8_output[3]";
 		INDEX = 224;
 		FORMAT = E;
 		SCALE = 1;
@@ -4161,15 +4185,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_output";
+		SIGNAL = "data8_output[2]";
 		INDEX = 225;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_output[7]";
+		SIGNAL = "data8_output[1]";
 		INDEX = 226;
 		FORMAT = E;
 		SCALE = 1;
@@ -4177,7 +4201,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_output[6]";
+		SIGNAL = "data8_output[0]";
 		INDEX = 227;
 		FORMAT = E;
 		SCALE = 1;
@@ -4185,15 +4209,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_output[5]";
+		SIGNAL = "data9_output";
 		INDEX = 228;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_output[4]";
+		SIGNAL = "data9_output[7]";
 		INDEX = 229;
 		FORMAT = E;
 		SCALE = 1;
@@ -4201,7 +4225,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_output[3]";
+		SIGNAL = "data9_output[6]";
 		INDEX = 230;
 		FORMAT = E;
 		SCALE = 1;
@@ -4209,7 +4233,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_output[2]";
+		SIGNAL = "data9_output[5]";
 		INDEX = 231;
 		FORMAT = E;
 		SCALE = 1;
@@ -4217,7 +4241,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_output[1]";
+		SIGNAL = "data9_output[4]";
 		INDEX = 232;
 		FORMAT = E;
 		SCALE = 1;
@@ -4225,7 +4249,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data9_output[0]";
+		SIGNAL = "data9_output[3]";
 		INDEX = 233;
 		FORMAT = E;
 		SCALE = 1;
@@ -4233,15 +4257,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_output";
+		SIGNAL = "data9_output[2]";
 		INDEX = 234;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_output[7]";
+		SIGNAL = "data9_output[1]";
 		INDEX = 235;
 		FORMAT = E;
 		SCALE = 1;
@@ -4249,7 +4273,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_output[6]";
+		SIGNAL = "data9_output[0]";
 		INDEX = 236;
 		FORMAT = E;
 		SCALE = 1;
@@ -4257,15 +4281,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_output[5]";
+		SIGNAL = "data10_output";
 		INDEX = 237;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_output[4]";
+		SIGNAL = "data10_output[7]";
 		INDEX = 238;
 		FORMAT = E;
 		SCALE = 1;
@@ -4273,7 +4297,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_output[3]";
+		SIGNAL = "data10_output[6]";
 		INDEX = 239;
 		FORMAT = E;
 		SCALE = 1;
@@ -4281,7 +4305,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_output[2]";
+		SIGNAL = "data10_output[5]";
 		INDEX = 240;
 		FORMAT = E;
 		SCALE = 1;
@@ -4289,7 +4313,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_output[1]";
+		SIGNAL = "data10_output[4]";
 		INDEX = 241;
 		FORMAT = E;
 		SCALE = 1;
@@ -4297,7 +4321,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data10_output[0]";
+		SIGNAL = "data10_output[3]";
 		INDEX = 242;
 		FORMAT = E;
 		SCALE = 1;
@@ -4305,15 +4329,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_output";
+		SIGNAL = "data10_output[2]";
 		INDEX = 243;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_output[7]";
+		SIGNAL = "data10_output[1]";
 		INDEX = 244;
 		FORMAT = E;
 		SCALE = 1;
@@ -4321,7 +4345,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_output[6]";
+		SIGNAL = "data10_output[0]";
 		INDEX = 245;
 		FORMAT = E;
 		SCALE = 1;
@@ -4329,15 +4353,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_output[5]";
+		SIGNAL = "data11_output";
 		INDEX = 246;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_output[4]";
+		SIGNAL = "data11_output[7]";
 		INDEX = 247;
 		FORMAT = E;
 		SCALE = 1;
@@ -4345,7 +4369,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_output[3]";
+		SIGNAL = "data11_output[6]";
 		INDEX = 248;
 		FORMAT = E;
 		SCALE = 1;
@@ -4353,7 +4377,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_output[2]";
+		SIGNAL = "data11_output[5]";
 		INDEX = 249;
 		FORMAT = E;
 		SCALE = 1;
@@ -4361,7 +4385,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_output[1]";
+		SIGNAL = "data11_output[4]";
 		INDEX = 250;
 		FORMAT = E;
 		SCALE = 1;
@@ -4369,7 +4393,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data11_output[0]";
+		SIGNAL = "data11_output[3]";
 		INDEX = 251;
 		FORMAT = E;
 		SCALE = 1;
@@ -4377,15 +4401,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_output";
+		SIGNAL = "data11_output[2]";
 		INDEX = 252;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_output[7]";
+		SIGNAL = "data11_output[1]";
 		INDEX = 253;
 		FORMAT = E;
 		SCALE = 1;
@@ -4393,7 +4417,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_output[6]";
+		SIGNAL = "data11_output[0]";
 		INDEX = 254;
 		FORMAT = E;
 		SCALE = 1;
@@ -4401,15 +4425,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_output[5]";
+		SIGNAL = "data12_output";
 		INDEX = 255;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_output[4]";
+		SIGNAL = "data12_output[7]";
 		INDEX = 256;
 		FORMAT = E;
 		SCALE = 1;
@@ -4417,7 +4441,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_output[3]";
+		SIGNAL = "data12_output[6]";
 		INDEX = 257;
 		FORMAT = E;
 		SCALE = 1;
@@ -4425,7 +4449,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_output[2]";
+		SIGNAL = "data12_output[5]";
 		INDEX = 258;
 		FORMAT = E;
 		SCALE = 1;
@@ -4433,7 +4457,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_output[1]";
+		SIGNAL = "data12_output[4]";
 		INDEX = 259;
 		FORMAT = E;
 		SCALE = 1;
@@ -4441,7 +4465,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data12_output[0]";
+		SIGNAL = "data12_output[3]";
 		INDEX = 260;
 		FORMAT = E;
 		SCALE = 1;
@@ -4449,15 +4473,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_output";
+		SIGNAL = "data12_output[2]";
 		INDEX = 261;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_output[7]";
+		SIGNAL = "data12_output[1]";
 		INDEX = 262;
 		FORMAT = E;
 		SCALE = 1;
@@ -4465,7 +4489,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_output[6]";
+		SIGNAL = "data12_output[0]";
 		INDEX = 263;
 		FORMAT = E;
 		SCALE = 1;
@@ -4473,15 +4497,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_output[5]";
+		SIGNAL = "data13_output";
 		INDEX = 264;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_output[4]";
+		SIGNAL = "data13_output[7]";
 		INDEX = 265;
 		FORMAT = E;
 		SCALE = 1;
@@ -4489,7 +4513,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_output[3]";
+		SIGNAL = "data13_output[6]";
 		INDEX = 266;
 		FORMAT = E;
 		SCALE = 1;
@@ -4497,7 +4521,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_output[2]";
+		SIGNAL = "data13_output[5]";
 		INDEX = 267;
 		FORMAT = E;
 		SCALE = 1;
@@ -4505,7 +4529,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_output[1]";
+		SIGNAL = "data13_output[4]";
 		INDEX = 268;
 		FORMAT = E;
 		SCALE = 1;
@@ -4513,7 +4537,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data13_output[0]";
+		SIGNAL = "data13_output[3]";
 		INDEX = 269;
 		FORMAT = E;
 		SCALE = 1;
@@ -4521,15 +4545,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_output";
+		SIGNAL = "data13_output[2]";
 		INDEX = 270;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_output[7]";
+		SIGNAL = "data13_output[1]";
 		INDEX = 271;
 		FORMAT = E;
 		SCALE = 1;
@@ -4537,7 +4561,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_output[6]";
+		SIGNAL = "data13_output[0]";
 		INDEX = 272;
 		FORMAT = E;
 		SCALE = 1;
@@ -4545,15 +4569,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_output[5]";
+		SIGNAL = "data14_output";
 		INDEX = 273;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_output[4]";
+		SIGNAL = "data14_output[7]";
 		INDEX = 274;
 		FORMAT = E;
 		SCALE = 1;
@@ -4561,7 +4585,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_output[3]";
+		SIGNAL = "data14_output[6]";
 		INDEX = 275;
 		FORMAT = E;
 		SCALE = 1;
@@ -4569,7 +4593,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_output[2]";
+		SIGNAL = "data14_output[5]";
 		INDEX = 276;
 		FORMAT = E;
 		SCALE = 1;
@@ -4577,7 +4601,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_output[1]";
+		SIGNAL = "data14_output[4]";
 		INDEX = 277;
 		FORMAT = E;
 		SCALE = 1;
@@ -4585,7 +4609,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data14_output[0]";
+		SIGNAL = "data14_output[3]";
 		INDEX = 278;
 		FORMAT = E;
 		SCALE = 1;
@@ -4593,15 +4617,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_output";
+		SIGNAL = "data14_output[2]";
 		INDEX = 279;
-		FORMAT = T;
+		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_output[7]";
+		SIGNAL = "data14_output[1]";
 		INDEX = 280;
 		FORMAT = E;
 		SCALE = 1;
@@ -4609,7 +4633,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_output[6]";
+		SIGNAL = "data14_output[0]";
 		INDEX = 281;
 		FORMAT = E;
 		SCALE = 1;
@@ -4617,15 +4641,15 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_output[5]";
+		SIGNAL = "data15_output";
 		INDEX = 282;
-		FORMAT = E;
+		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_output[4]";
+		SIGNAL = "data15_output[7]";
 		INDEX = 283;
 		FORMAT = E;
 		SCALE = 1;
@@ -4633,7 +4657,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_output[3]";
+		SIGNAL = "data15_output[6]";
 		INDEX = 284;
 		FORMAT = E;
 		SCALE = 1;
@@ -4641,7 +4665,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_output[2]";
+		SIGNAL = "data15_output[5]";
 		INDEX = 285;
 		FORMAT = E;
 		SCALE = 1;
@@ -4649,7 +4673,7 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_output[1]";
+		SIGNAL = "data15_output[4]";
 		INDEX = 286;
 		FORMAT = E;
 		SCALE = 1;
@@ -4657,8 +4681,32 @@ VECTOR("D:/Development/AES/aes_quartus/db/aes_quartus.sim.cvwf")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "data15_output[0]";
+		SIGNAL = "data15_output[3]";
 		INDEX = 287;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "data15_output[2]";
+		INDEX = 288;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "data15_output[1]";
+		INDEX = 289;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "data15_output[0]";
+		INDEX = 290;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;

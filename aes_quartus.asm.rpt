@@ -1,5 +1,5 @@
 Assembler report for aes_quartus
-Wed Sep 26 15:11:27 2018
+Sat Nov 10 19:58:46 2018
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -12,8 +12,7 @@ Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
   4. Assembler Generated Files
   5. Assembler Device Options: D:/Development/AES/aes_quartus/aes_quartus.sof
   6. Assembler Device Options: D:/Development/AES/aes_quartus/aes_quartus.pof
-  7. Assembler Device Options: D:/Development/AES/aes_quartus/aes_quartus_1.pof
-  8. Assembler Messages
+  7. Assembler Messages
 
 
 
@@ -39,11 +38,11 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed Sep 26 15:11:27 2018 ;
+; Assembler Status      ; Successful - Sat Nov 10 19:58:46 2018 ;
 ; Revision Name         ; aes_quartus                           ;
 ; Top-level Entity Name ; aes_quartus                           ;
 ; Family                ; APEX20KE                              ;
-; Device                ; EP20K200EFI484-2X                     ;
+; Device                ; EP20K160EFC484-1                      ;
 +-----------------------+---------------------------------------+
 
 
@@ -78,15 +77,14 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+--------------------------------------------------+
-; Assembler Generated Files                        ;
-+--------------------------------------------------+
-; File Name                                        ;
-+--------------------------------------------------+
-; D:/Development/AES/aes_quartus/aes_quartus.sof   ;
-; D:/Development/AES/aes_quartus/aes_quartus.pof   ;
-; D:/Development/AES/aes_quartus/aes_quartus_1.pof ;
-+--------------------------------------------------+
++------------------------------------------------+
+; Assembler Generated Files                      ;
++------------------------------------------------+
+; File Name                                      ;
++------------------------------------------------+
+; D:/Development/AES/aes_quartus/aes_quartus.sof ;
+; D:/Development/AES/aes_quartus/aes_quartus.pof ;
++------------------------------------------------+
 
 
 +--------------------------------------------------------------------------+
@@ -94,9 +92,9 @@ applicable agreement for further details.
 +----------------+---------------------------------------------------------+
 ; Option         ; Setting                                                 ;
 +----------------+---------------------------------------------------------+
-; Device         ; EP20K200EFI484-2X                                       ;
+; Device         ; EP20K160EFC484-1                                        ;
 ; JTAG usercode  ; 0xFFFFFFFF                                              ;
-; Checksum       ; 0x00016213                                              ;
+; Checksum       ; 0x00118FF8                                              ;
 +----------------+---------------------------------------------------------+
 
 
@@ -107,21 +105,9 @@ applicable agreement for further details.
 +--------------------+-----------------------------------------------------+
 ; Device             ; EPC2                                                ;
 ; JTAG usercode      ; 0x00000000                                          ;
-; Checksum           ; 0x0006D2B2                                          ;
+; Checksum           ; 0x006C7506                                          ;
 ; Compression Ratio  ; 1                                                   ;
 +--------------------+-----------------------------------------------------+
-
-
-+----------------------------------------------------------------------------+
-; Assembler Device Options: D:/Development/AES/aes_quartus/aes_quartus_1.pof ;
-+--------------------+-------------------------------------------------------+
-; Option             ; Setting                                               ;
-+--------------------+-------------------------------------------------------+
-; Device             ; EPC2                                                  ;
-; JTAG usercode      ; 0x00000000                                            ;
-; Checksum           ; 0x02B5740D                                            ;
-; Compression Ratio  ; 1                                                     ;
-+--------------------+-------------------------------------------------------+
 
 
 +--------------------+
@@ -130,12 +116,12 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II Assembler
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Wed Sep 26 15:11:27 2018
+    Info: Processing started: Sat Nov 10 19:58:45 2018
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off aes_quartus -c aes_quartus
 Info: Assembler is generating device programming files
 Info: Quartus II Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 253 megabytes
-    Info: Processing ended: Wed Sep 26 15:11:28 2018
+    Info: Peak virtual memory: 243 megabytes
+    Info: Processing ended: Sat Nov 10 19:58:46 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

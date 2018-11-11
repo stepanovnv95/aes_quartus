@@ -1,12 +1,12 @@
-Fitter Status : Successful - Wed Sep 26 15:11:26 2018
+Fitter Status : Failed - Sun Nov 11 12:29:13 2018
 Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
 Revision Name : aes_quartus
 Top-level Entity Name : aes_quartus
 Family : APEX20KE
-Device : EP20K200EFI484-2X
+Device : EP20K160EFC484-1
 Timing Models : Final
-Total logic elements : 0 / 8,320 ( 0 % )
-Total pins : 257 / 376 ( 68 % )
+Total logic elements : 8,274 / 6,400 ( 129 % )
+Total pins : 259 / 316 ( 82 % )
 Total virtual pins : 0
-Total memory bits : 0 / 106,496 ( 0 % )
-Total PLLs : 0 / 2 ( 0 % )
+Total memory bits : 1,920 / 81,920 ( 2 % )
+Total PLLs : 0
