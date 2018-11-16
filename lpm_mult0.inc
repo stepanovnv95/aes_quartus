@@ -15,9 +15,9 @@
 
 FUNCTION lpm_mult0 
 (
-	dataa[3..0]
+	dataa[7..0]
 )
 
 RETURNS (
-	result[7..0]
+	result[15..0]
 );

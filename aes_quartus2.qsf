@@ -1,0 +1,86 @@
+# Copyright (C) 1991-2008 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+
+# The default values for assignments are stored in the file
+#		aes_quartus2_assignment_defaults.qdf
+# If this file doesn't exist, and for assignments not listed, see file
+#		assignment_defaults.qdf
+
+# Altera recommends that you do not modify this file. This
+# file is updated automatically by the Quartus II software
+# and any changes you make may be lost or overwritten.
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C70F896C6
+set_global_assignment -name TOP_LEVEL_ENTITY aes_quartus2
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 8.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:33:02  NOVEMBER 11, 2018"
+set_global_assignment -name LAST_QUARTUS_VERSION 8.1
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name BDF_FILE aes_quartus2.bdf
+set_global_assignment -name BDF_FILE aes_encrypt.bdf
+set_global_assignment -name BDF_FILE aes_decrypt.bdf
+set_global_assignment -name BDF_FILE encrypt_round.bdf
+set_global_assignment -name BDF_FILE decrypt_round.bdf
+set_global_assignment -name BDF_FILE add_round_key.bdf
+set_global_assignment -name BDF_FILE sub_bytes.bdf
+set_global_assignment -name BDF_FILE inv_sub_bytes.bdf
+set_global_assignment -name BDF_FILE shift_rows.bdf
+set_global_assignment -name BDF_FILE inv_shift_rows.bdf
+set_global_assignment -name BDF_FILE mix_columns.bdf
+set_global_assignment -name BDF_FILE inv_mix_columns.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE aes_quartus2.vwf
+set_global_assignment -name QIP_FILE lpm_mux0.qip
+set_global_assignment -name INCREMENTAL_COMPILATION OFF
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name QIP_FILE lpm_dff0.qip
+set_global_assignment -name QIP_FILE lpm_dff1.qip
+set_global_assignment -name BDF_FILE 128bits_to_16bytes.bdf
+set_global_assignment -name BDF_FILE 16bytes_to_128bits.bdf
+set_global_assignment -name BDF_FILE 9rounds.bdf
+set_global_assignment -name QIP_FILE lpm_xor0.qip
+set_global_assignment -name QIP_FILE lpm_dff2.qip
+set_global_assignment -name BDF_FILE 9rounds_decrypt.bdf
+set_global_assignment -name HEX_FILE sbox.hex
+set_global_assignment -name BDF_FILE 128to16.bdf
+set_global_assignment -name BDF_FILE 16to128.bdf
+set_global_assignment -name QIP_FILE lpm_rom0.qip
+set_global_assignment -name QIP_FILE lpm_xor1.qip
+set_global_assignment -name BDF_FILE key_expansion.bdf
+set_global_assignment -name QIP_FILE lpm_constant0.qip
+set_global_assignment -name QIP_FILE lpm_rom1.qip
+set_global_assignment -name QIP_FILE lpm_constant1.qip
+set_global_assignment -name QIP_FILE lpm_constant2.qip
+set_global_assignment -name HEX_FILE key_sheldure.hex
+set_global_assignment -name QIP_FILE lpm_constant3.qip
+set_global_assignment -name QIP_FILE lpm_mult0.qip
+set_global_assignment -name QIP_FILE lpm_add_sub0.qip
+set_global_assignment -name QIP_FILE lpm_constant4.qip
+set_global_assignment -name QIP_FILE lpm_constant5.qip
+set_global_assignment -name QIP_FILE lpm_constant6.qip
+set_global_assignment -name QIP_FILE lpm_constant7.qip
+set_global_assignment -name QIP_FILE lpm_constant8.qip
+set_global_assignment -name QIP_FILE lpm_constant9.qip
+set_global_assignment -name QIP_FILE lpm_constant10.qip
+set_global_assignment -name QIP_FILE lpm_constant11.qip
+set_global_assignment -name QIP_FILE lpm_constant12.qip
+set_global_assignment -name QIP_FILE lpm_constant13.qip
+set_global_assignment -name QIP_FILE lpm_constant14.qip
+set_global_assignment -name QIP_FILE lpm_constant15.qip
+set_global_assignment -name QIP_FILE lpm_constant16.qip

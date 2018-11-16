@@ -19,5 +19,5 @@ FUNCTION lpm_constant4
 )
 
 RETURNS (
-	result[2..0]
+	result[7..0]
 );

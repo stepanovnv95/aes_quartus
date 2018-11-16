@@ -15,7 +15,8 @@
 
 FUNCTION lpm_add_sub0 
 (
-	dataa[7..0]
+	dataa[7..0],
+	datab[7..0]
 )
 
 RETURNS (

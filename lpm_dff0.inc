@@ -16,10 +16,9 @@
 FUNCTION lpm_dff0 
 (
 	clock,
-	data[7..0],
-	sset
+	data[127..0]
 )
 
 RETURNS (
-	q[7..0]
+	q[127..0]
 );

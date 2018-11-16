@@ -65,7 +65,7 @@ END;
 -- ============================================================
 -- Retrieval info: PRIVATE: CompactSymbol NUMERIC "0"
 -- Retrieval info: PRIVATE: GateFunction NUMERIC "2"
--- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "APEX20KE"
+-- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Cyclone II"
 -- Retrieval info: PRIVATE: InputAsBus NUMERIC "0"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
 -- Retrieval info: PRIVATE: WidthInput NUMERIC "8"

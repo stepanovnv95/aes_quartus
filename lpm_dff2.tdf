@@ -69,7 +69,7 @@ END;
 -- Retrieval info: PRIVATE: ASET_ALL1 NUMERIC "1"
 -- Retrieval info: PRIVATE: CLK_EN NUMERIC "0"
 -- Retrieval info: PRIVATE: DFF NUMERIC "1"
--- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Stratix II"
+-- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Cyclone II"
 -- Retrieval info: PRIVATE: SCLR NUMERIC "0"
 -- Retrieval info: PRIVATE: SLOAD NUMERIC "0"
 -- Retrieval info: PRIVATE: SSET NUMERIC "0"

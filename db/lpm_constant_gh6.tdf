@@ -1,4 +1,4 @@
---lpm_constant ENABLE_RUNTIME_MOD="NO" LPM_CVALUE=1E LPM_WIDTH=8 result
+--lpm_constant ENABLE_RUNTIME_MOD="NO" LPM_CVALUE=0F LPM_WIDTH=8 result
 --VERSION_BEGIN 8.1 cbx_lpm_constant 2008:05:19:10:45:59:SJ cbx_mgl 2008:08:08:15:16:18:SJ  VERSION_END
 
 
@@ -25,6 +25,6 @@ SUBDESIGN lpm_constant_gh6
 ) 
 
 BEGIN 
-	result[] = B"00011110";
+	result[] = B"00001111";
 END;
 --VALID FILE

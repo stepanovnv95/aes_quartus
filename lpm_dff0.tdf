@@ -39,26 +39,23 @@ INCLUDE "lpm_ff.inc";
 SUBDESIGN lpm_dff0
 (
 	clock	 : INPUT;
-	data[7..0]	 : INPUT;
-	sset	 : INPUT;
-	q[7..0]	 : OUTPUT;
+	data[127..0]	 : INPUT;
+	q[127..0]	 : OUTPUT;
 )
 
 VARIABLE
 
 	lpm_ff_component : lpm_ff WITH (
 			LPM_FFTYPE = "DFF",
-			LPM_SVALUE = "128",
 			LPM_TYPE = "LPM_FF",
-			LPM_WIDTH = 8
+			LPM_WIDTH = 128
 			);
 
 BEGIN
 
-	q[7..0] = lpm_ff_component.q[7..0];
+	q[127..0] = lpm_ff_component.q[127..0];
 	lpm_ff_component.clock = clock;
-	lpm_ff_component.data[7..0] = data[7..0];
-	lpm_ff_component.sset = sset;
+	lpm_ff_component.data[127..0] = data[127..0];
 END;
 
 
@@ -72,26 +69,23 @@ END;
 -- Retrieval info: PRIVATE: ASET_ALL1 NUMERIC "1"
 -- Retrieval info: PRIVATE: CLK_EN NUMERIC "0"
 -- Retrieval info: PRIVATE: DFF NUMERIC "1"
--- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Stratix II"
+-- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Cyclone II"
 -- Retrieval info: PRIVATE: SCLR NUMERIC "0"
 -- Retrieval info: PRIVATE: SLOAD NUMERIC "0"
--- Retrieval info: PRIVATE: SSET NUMERIC "1"
--- Retrieval info: PRIVATE: SSET_ALL1 NUMERIC "0"
+-- Retrieval info: PRIVATE: SSET NUMERIC "0"
+-- Retrieval info: PRIVATE: SSET_ALL1 NUMERIC "1"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
 -- Retrieval info: PRIVATE: UseTFFdataPort NUMERIC "0"
--- Retrieval info: PRIVATE: nBit NUMERIC "8"
+-- Retrieval info: PRIVATE: nBit NUMERIC "128"
 -- Retrieval info: CONSTANT: LPM_FFTYPE STRING "DFF"
--- Retrieval info: CONSTANT: LPM_SVALUE STRING "128"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_FF"
--- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "8"
+-- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "128"
 -- Retrieval info: USED_PORT: clock 0 0 0 0 INPUT NODEFVAL clock
--- Retrieval info: USED_PORT: data 0 0 8 0 INPUT NODEFVAL data[7..0]
--- Retrieval info: USED_PORT: q 0 0 8 0 OUTPUT NODEFVAL q[7..0]
--- Retrieval info: USED_PORT: sset 0 0 0 0 INPUT NODEFVAL sset
+-- Retrieval info: USED_PORT: data 0 0 128 0 INPUT NODEFVAL data[127..0]
+-- Retrieval info: USED_PORT: q 0 0 128 0 OUTPUT NODEFVAL q[127..0]
 -- Retrieval info: CONNECT: @clock 0 0 0 0 clock 0 0 0 0
--- Retrieval info: CONNECT: q 0 0 8 0 @q 0 0 8 0
--- Retrieval info: CONNECT: @sset 0 0 0 0 sset 0 0 0 0
--- Retrieval info: CONNECT: @data 0 0 8 0 data 0 0 8 0
+-- Retrieval info: CONNECT: q 0 0 128 0 @q 0 0 128 0
+-- Retrieval info: CONNECT: @data 0 0 128 0 data 0 0 128 0
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff0.tdf TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_dff0.inc TRUE

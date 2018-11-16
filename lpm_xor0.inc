@@ -15,10 +15,10 @@
 
 FUNCTION lpm_xor0 
 (
-	data0x[7..0],
-	data1x[7..0]
+	data0x[127..0],
+	data1x[127..0]
 )
 
 RETURNS (
-	result[7..0]
+	result[127..0]
 );

@@ -15,7 +15,8 @@
 
 FUNCTION lpm_rom1 
 (
-	address[7..0]
+	address[7..0],
+	clock
 )
 
 RETURNS (

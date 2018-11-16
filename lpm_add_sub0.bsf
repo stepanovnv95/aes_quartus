@@ -31,6 +31,13 @@ applicable agreement for further details.
 		(line (pt 0 40)(pt 64 40)(line_width 3))
 	)
 	(port
+		(pt 0 72)
+		(input)
+		(text "datab[7..0]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
+		(text "datab[7..0]" (rect 4 59 55 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 64 72)(line_width 3))
+	)
+	(port
 		(pt 160 56)
 		(output)
 		(text "result[7..0]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
@@ -38,7 +45,6 @@ applicable agreement for further details.
 		(line (pt 160 56)(pt 96 56)(line_width 3))
 	)
 	(drawing
-		(text "3" (rect 10 59 16 72)(font "Arial" (font_size 8)))
 		(text "A" (rect 66 34 73 47)(font "Arial" (font_size 8)))
 		(text "B" (rect 66 66 73 79)(font "Arial" (font_size 8)))
 		(text "A+B" (rect 73 50 93 63)(font "Arial" (font_size 8)))
@@ -46,6 +52,5 @@ applicable agreement for further details.
 		(line (pt 96 40)(pt 96 72)(line_width 1))
 		(line (pt 96 72)(pt 64 80)(line_width 1))
 		(line (pt 64 80)(pt 64 32)(line_width 1))
-		(line (pt 8 72)(pt 64 72)(line_width 3))
 	)
 )

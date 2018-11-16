@@ -38,9 +38,9 @@ INCLUDE "lpm_xor.inc";
 
 SUBDESIGN lpm_xor0
 (
-	data0x[7..0]	 : INPUT;
-	data1x[7..0]	 : INPUT;
-	result[7..0]	 : OUTPUT;
+	data0x[127..0]	 : INPUT;
+	data1x[127..0]	 : INPUT;
+	result[127..0]	 : OUTPUT;
 )
 
 VARIABLE
@@ -48,14 +48,14 @@ VARIABLE
 	lpm_xor_component : lpm_xor WITH (
 			LPM_SIZE = 2,
 			LPM_TYPE = "LPM_XOR",
-			LPM_WIDTH = 8
+			LPM_WIDTH = 128
 			);
 
 BEGIN
 
-	result[7..0] = lpm_xor_component.result[7..0];
-	lpm_xor_component.data[1..1][7..0] = data1x[7..0];
-	lpm_xor_component.data[0..0][7..0] = data0x[7..0];
+	result[127..0] = lpm_xor_component.result[127..0];
+	lpm_xor_component.data[1..1][127..0] = data1x[127..0];
+	lpm_xor_component.data[0..0][127..0] = data0x[127..0];
 END;
 
 
@@ -65,20 +65,20 @@ END;
 -- ============================================================
 -- Retrieval info: PRIVATE: CompactSymbol NUMERIC "0"
 -- Retrieval info: PRIVATE: GateFunction NUMERIC "2"
--- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "APEX20KE"
+-- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Cyclone II"
 -- Retrieval info: PRIVATE: InputAsBus NUMERIC "0"
 -- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
--- Retrieval info: PRIVATE: WidthInput NUMERIC "8"
+-- Retrieval info: PRIVATE: WidthInput NUMERIC "128"
 -- Retrieval info: PRIVATE: nInput NUMERIC "2"
 -- Retrieval info: CONSTANT: LPM_SIZE NUMERIC "2"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_XOR"
--- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "8"
--- Retrieval info: USED_PORT: data0x 0 0 8 0 INPUT NODEFVAL data0x[7..0]
--- Retrieval info: USED_PORT: data1x 0 0 8 0 INPUT NODEFVAL data1x[7..0]
--- Retrieval info: USED_PORT: result 0 0 8 0 OUTPUT NODEFVAL result[7..0]
--- Retrieval info: CONNECT: @data 1 0 8 0 data0x 0 0 8 0
--- Retrieval info: CONNECT: @data 1 1 8 0 data1x 0 0 8 0
--- Retrieval info: CONNECT: result 0 0 8 0 @result 0 0 8 0
+-- Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "128"
+-- Retrieval info: USED_PORT: data0x 0 0 128 0 INPUT NODEFVAL data0x[127..0]
+-- Retrieval info: USED_PORT: data1x 0 0 128 0 INPUT NODEFVAL data1x[127..0]
+-- Retrieval info: USED_PORT: result 0 0 128 0 OUTPUT NODEFVAL result[127..0]
+-- Retrieval info: CONNECT: @data 1 0 128 0 data0x 0 0 128 0
+-- Retrieval info: CONNECT: @data 1 1 128 0 data1x 0 0 128 0
+-- Retrieval info: CONNECT: result 0 0 128 0 @result 0 0 128 0
 -- Retrieval info: LIBRARY: lpm lpm.lpm_components.all
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_xor0.tdf TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL lpm_xor0.inc TRUE
